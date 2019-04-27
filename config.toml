@@ -1,8 +1,8 @@
-baseurl = "https://pages.gitlab.io/hugo/"
+baseurl = "https://www.barbequespecialiststavenuiter.nl/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = "Beautiful Hugo"
+title = "Barbeque Specialist Stavenuiter"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
@@ -17,7 +17,7 @@ pygmentCodeFences = true
   subtitle = "Hugo Blog Template for GitLab Pages"
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
-  dateFormat = "January 2, 2006"
+  dateFormat = "May 1, 2019"
   commit = false
   rss = true
   comments = true
@@ -34,8 +34,8 @@ pygmentCodeFences = true
 #  desc = "Hexagon"
 
 [Author]
-  name = "Some Person"
-  email = "youremail@domain.com"
+  name = "Stefan Schenk"
+  email = "stefan_schenk@hotmail.com"
   facebook = "username"
   googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
   gitlab = "username"
