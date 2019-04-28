@@ -2,7 +2,7 @@ baseurl = "https://www.barbequespecialiststavenuiter.nl/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = "Barbeque Specialist Stavenuiter"
+title = "Stavenuiter"
 canonifyurls  = true
 enableGitInfo = true
 enableRobotsTXT = true
@@ -15,23 +15,17 @@ pygmentCodeFences = true
 googleAnalytics = "UA-102304414-2"
 
 [Params]
-  subtitle = "Hugo Blog Template for GitLab Pages"
-  logo = "/img/avatar-icon.png"
+  subtitle = "Barbeque Specialist"
+  logo = "/img/logo.png"
   favicon = "/img/favicon.ico"
   dateFormat = "May 1, 2019"
   commit = false
   rss = true
   comments = true
 
-#[[Params.bigimg]]
-#  src = "/img/triangle.jpg"
-#  desc = "Triangle"
-#[[Params.bigimg]]
-#  src = "img/sphere.jpg"
-#  desc = "Sphere"
-#[[Params.bigimg]]
-#  src = "img/hexagon.jpg"
-#  desc = "Hexagon"
+[[Params.bigimg]]
+  src = "/img/retina-background-min.jpg"
+  desc = "Hamburgers"
 
 [Author]
   name = "Stefan Schenk"
@@ -55,40 +49,41 @@ googleAnalytics = "UA-102304414-2"
 #  keybase = "username"
 
 
-[[menu.main]]
-    name = "Blog"
-    url = ""
-    weight = 1
-
-[[menu.main]]
-    name = "About"
-    url = "page/about/"
-    weight = 3
-
-[[menu.main]]
-    identifier = "samples"
-    name = "Samples"
-    weight = 2
-
-[[menu.main]]
-    parent = "samples"
-    name = "Big Image Sample"
-    url = "post/2017-03-07-bigimg-sample"
-    weight = 1
-
-[[menu.main]]
-    parent = "samples"
-    name = "Math Sample"
-    url = "post/2017-03-05-math-sample"
-    weight = 2
-
-[[menu.main]]
-    parent = "samples"
-    name = "Code Sample"
-    url = "post/2016-03-08-code-sample"
-    weight = 3
-
-[[menu.main]]
-    name = "Tags"
-    url = "tags"
-    weight = 3
+#[[menu.main]]
+#    name = "Blog"
+#    url = ""
+#    weight = 1
+#
+#[[menu.main]]
+#    name = "About"
+#    url = "page/about/"
+#    weight = 3
+#
+#[[menu.main]]
+#    identifier = "samples"
+#    name = "Samples"
+#    weight = 2
+#
+#[[menu.main]]
+#    parent = "samples"
+#    name = "Big Image Sample"
+#    url = "post/2017-03-07-bigimg-sample"
+#    weight = 1
+#
+#[[menu.main]]
+#    parent = "samples"
+#    name = "Math Sample"
+#    url = "post/2017-03-05-math-sample"
+#    weight = 2
+#
+#[[menu.main]]
+#    parent = "samples"
+#    name = "Code Sample"
+#    url = "post/2016-03-08-code-sample"
+#    weight = 3
+#
+#[[menu.main]]
+#    name = "Tags"
+#    url = "tags"
+#    weight = 3
+#
