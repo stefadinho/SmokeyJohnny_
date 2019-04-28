@@ -20,7 +20,7 @@ googleAnalytics = "UA-102304414-2"
   favicon = "/img/favicon.ico"
   dateFormat = "May 1, 2019"
   commit = false
-  rss = true
+  rss = false
   comments = true
 
 [[Params.bigimg]]
@@ -28,7 +28,7 @@ googleAnalytics = "UA-102304414-2"
   desc = "Hamburgers"
 
 [Author]
-  name = "Stefan Schenk"
+  name = "John"
   email = "jstavenuiter@quicknet.nl"
   facebook = "slagerijstavenuiter"
 #  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
