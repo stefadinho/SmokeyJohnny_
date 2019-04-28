@@ -4,27 +4,27 @@ layoutdir     = "layouts"
 publishdir    = "public"
 title = "Barbeque Specialist Stavenuiter"
 canonifyurls  = true
-
+enableGitInfo = true
+enableRobotsTXT = true
 DefaultContentLanguage = "en"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
 #disqusShortname = "XXX"
-#googleAnalytics = "XXX"
+googleAnalytics = "UA-102304414-2"
 
 [Params]
   subtitle = "Hugo Blog Template for GitLab Pages"
-  logo = "img/avatar-icon.png"
-  favicon = "img/favicon.ico"
+  logo = "/img/avatar-icon.png"
+  favicon = "/img/favicon.ico"
   dateFormat = "May 1, 2019"
   commit = false
   rss = true
   comments = true
-#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
 #[[Params.bigimg]]
-#  src = "img/triangle.jpg"
+#  src = "/img/triangle.jpg"
 #  desc = "Triangle"
 #[[Params.bigimg]]
 #  src = "img/sphere.jpg"
@@ -35,24 +35,24 @@ pygmentCodeFences = true
 
 [Author]
   name = "Stefan Schenk"
-  email = "stefan_schenk@hotmail.com"
-  facebook = "username"
-  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
-  gitlab = "username"
-  github = "username"
-  twitter = "username"
-  reddit = "username"
-  linkedin = "username"
-  xing = "username"
-  stackoverflow = "users/XXXXXXX/username"
-  snapchat = "username"
-  instagram = "username"
-  youtube = "user/username" # or channel/channelname
-  soundcloud = "username"
-  spotify = "username"
-  bandcamp = "username"
-  itchio = "username"
-  keybase = "username"
+  email = "jstavenuiter@quicknet.nl"
+  facebook = "slagerijstavenuiter"
+#  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
+#  gitlab = "username"
+#  github = "username"
+#  twitter = "username"
+#  reddit = "username"
+#  linkedin = "username"
+#  xing = "username"
+#  stackoverflow = "users/XXXXXXX/username"
+#  snapchat = "username"
+#  instagram = "username"
+#  youtube = "user/username" # or channel/channelname
+#  soundcloud = "username"
+#  spotify = "username"
+#  bandcamp = "username"
+#  itchio = "username"
+#  keybase = "username"
 
 
 [[menu.main]]
