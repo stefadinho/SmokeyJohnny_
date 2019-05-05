@@ -1,0 +1,40 @@
+# Content
+- id: dateFormat
+  translation: "January 2, 2006"
+- id: postedOnDate
+  translation: "Geplaatst op {{ .Count }}"
+- id: translationsLabel
+  translation: "Ander Talen: "
+- id: translationsSeparator
+  translation: ", "
+- id: readMore
+  translation: "Lees Meer"
+- id: olderPosts
+  translation: "Oudere Posts"
+- id: newerPosts
+  translation: "Nieuwere Posts"
+- id: previousPost
+  translation: "Vorige Post"
+- id: nextPost
+  translation: "Volgende Post"
+
+# 404 page
+- id: pageNotFound
+  translation: "Oeps, deze pagina bestaat niet. (404 error)"
+
+# Footer
+- id: poweredBy # Accepts HTML
+  translation: 'Webdesign: <a href="https://www.linkedin.com/in/stefanschenk/">Stefan Schenk</a>'
+
+# Navigation
+- id: toggleNavigation
+  translation: "Navigatie aan/uit"
+- id: languageSwitcherLabel
+  translation: "Taal"
+- id: gcseLabelShort
+  translation: "Zoek"
+- id: gcseLabelLong
+  translation: "Zoek {{ .Site.Title }}"
+- id: gcseClose
+  translation: "Sluiten"
+
