@@ -12,7 +12,7 @@ body {
   font-size: 18px;
   color: #FFF;
   position: relative;
-  background: #404040;
+  background: red;
 }
 p {
   line-height: 1.5;
@@ -120,6 +120,10 @@ img {
   background: transparent;
   border: none;
   margin-top: 0em;
+}
+
+.row {
+  margin: auto;
 }
 
 /* --- Navbar --- */
@@ -323,14 +327,9 @@ footer .theme-by {
 /* --- Post preview --- */
 
 .post-preview {
-  padding: 20px 0;
+  padding: 19px;
+  /* padding: 20px 0; */
   border-bottom: 1px solid #eee;
-}
-
-@media only screen and (min-width: 768px) {
-  .post-preview {
-    padding: 35px 0;
-  }
 }
 
 .post-preview:last-child {
@@ -463,7 +462,7 @@ footer .theme-by {
   background-size: cover;
   -o-background-size: cover;
   margin-top: 51px; /* The small navbar is 50px tall + 1px border */
-  margin-bottom: 35px;
+  margin-bottom: 0;
 }
 .intro-header.big-img  .big-img-transition {
   position: absolute;
@@ -553,12 +552,13 @@ footer .theme-by {
   }
 }
 
-.header-section {
-  height: 25em;
-  margin-top: -2.5em;
-}
+/* .header-section {
+
+} */
 
 .header-section.has-img .no-img {
+  height: 25em;
+  margin-top: -2.5em;
   background: #FCFCFC;
   margin: 0 0 40px;
   padding: 20px 0;
