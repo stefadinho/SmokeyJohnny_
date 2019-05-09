@@ -1,6 +1,6 @@
 ---
 title: Onze Vleesproducten
-subtitle: Making a Gallery
+# subtitle: Kwaliteit staat voorop
 date: 2019-04-28
 tags: ["producten"]
 ---
