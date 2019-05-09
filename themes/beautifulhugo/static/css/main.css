@@ -123,6 +123,10 @@ img {
   margin: auto;
 }
 
+.fa-inverse {
+  color: #d40002;
+}
+
 /* --- Navbar --- */
 
 .navbar-custom {
@@ -458,7 +462,7 @@ footer .theme-by {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-top: 51px; /* The small navbar is 50px tall + 1px border */
+  margin-top: 3em; /* The small navbar is 50px tall + 1px border */
   margin-bottom: 0;
 }
 .intro-header.big-img  .big-img-transition {
@@ -532,7 +536,7 @@ footer .theme-by {
     margin-top: 130px;
   }
   .intro-header.big-img {
-    margin-top: 91px;  /* Full navbar is small navbar + 20px padding on each side when expanded */
+    height: 28em;
   }
   .intro-header.big-img .page-heading,
   .intro-header.big-img .post-heading  {
