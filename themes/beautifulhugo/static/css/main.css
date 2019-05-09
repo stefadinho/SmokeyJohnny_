@@ -2,12 +2,17 @@
 
 /* --- General --- */
 
+html, body {
+  /* width: 100vw; */
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
-  color: #404040;
+  color: #FFF;
   position: relative;
-  background: #FFF;
+  background: #404040;
 }
 p {
   line-height: 1.5;
@@ -96,11 +101,32 @@ img {
   }
 }
 
+/* --- Override Bootstrap --- */
+
+.container {
+  padding-right: 0em;
+  padding-left: 0em;
+  margin-right: 0em;
+  margin-left: 0em;
+  width: 100%;
+}
+
+.wood {
+  background-image: url('/img/wood.jpg');
+  background-repeat: repeat;
+}
+
+.well {
+  background: transparent;
+  border: none;
+  margin-top: 0em;
+}
+
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #F5F5F5;
-  border-bottom: 1px solid #EAEAEA;
+  background: #0c0a0b;
+  border-bottom: 1px solid red;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -113,7 +139,7 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
   font-weight: 800;
-  color: #404040;
+  color: #FFF;
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -259,14 +285,13 @@ img {
 
 footer {
   padding: 30px 0;
-  background: #F5F5F5;
-  border-top: 1px #EAEAEA solid;
-  margin-top: 50px;
+  background: #0c0a0b;
+  border-top: 1px red solid;
   font-size: 14px;
 }
 
 footer a {
-  color: #404040;
+  color: #FFF;
 }
 
 footer .list-inline {
@@ -314,7 +339,7 @@ footer .theme-by {
 
 .post-preview a {
   text-decoration: none;
-  color: #404040;
+  color: #FFF;
 }
 
 .post-preview a:focus,
@@ -341,7 +366,7 @@ footer .theme-by {
 }
 .post-preview .post-meta a,
 .post-heading .post-meta a {
-  color: #404040;
+  color: #FFF;
   text-decoration: none;
 }
 .post-preview .post-entry {
@@ -528,8 +553,12 @@ footer .theme-by {
   }
 }
 
+.header-section {
+  height: 25em;
+  margin-top: -2.5em;
+}
+
 .header-section.has-img .no-img {
-  margin-top: 0;
   background: #FCFCFC;
   margin: 0 0 40px;
   padding: 20px 0;
@@ -583,7 +612,7 @@ footer .theme-by {
   padding: 10px 5px;
   background: #FFF;
   border-radius: 0;
-  color: #404040;
+  color: #FFF;
 }
 @media only screen and (min-width: 768px) {
   .pager li a {
