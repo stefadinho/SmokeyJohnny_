@@ -1,5 +1,10 @@
 @import url("pygment_highlights.css");
 
+:root {
+  --primary: #d40002;
+  --secondary: #0c0a0b;
+}
+
 /* --- General --- */
 
 html, body {
@@ -22,18 +27,18 @@ p {
 }
 p a {
   /* text-decoration: underline */
-  color: #008AFF;
+  color: var(--primary);
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 a {
-  color: #008AFF;
+  color: var(--primary);
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: var(--primary);
 }
 blockquote {
   color: #808080;
@@ -124,13 +129,20 @@ img {
 }
 
 .fa-inverse {
-  color: #d40002;
+  color: var(--primary);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.fa-inverse:hover {
+  color: white;
+  background-color: var(--primary);
 }
 
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #0c0a0b;
+  background: var(--secondary);
   border-bottom: 1px solid red;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -151,7 +163,7 @@ img {
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #0085a1;
+  color: var(--primary);
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -290,7 +302,7 @@ img {
 
 footer {
   padding: 30px 0;
-  background: #0c0a0b;
+  background: var(--secondary);
   border-top: 1px red solid;
   font-size: 14px;
 }
@@ -344,7 +356,7 @@ footer .theme-by {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #0085a1;
+  color: var(--primary);
 }
 
 .post-preview .post-title {
@@ -414,14 +426,14 @@ footer .theme-by {
 }
 
 .blog-tags a {
-  color: #008AFF;
+  color: var(--primary);
   text-decoration: none;
   padding: 0px 5px;
 }
 
 .blog-tags a:hover {
   border-radius: 2px;
-  color: #008AFF;
+  color: var(--primary);
   background-color: #CCC;
 }
 
