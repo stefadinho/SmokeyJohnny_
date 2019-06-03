@@ -416,6 +416,44 @@ footer .theme-by {
   }
 }
 
+/* --- Decoration --- */
+
+.cutboard {
+  height: 22em;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  transform: rotate(2deg);
+}
+
+.cutboard > div {
+  position: absolute;
+  font-size: 1.5em;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 17em;
+  left: 50%;
+  top: 50%;
+}
+
+.cutboard > img {
+  vertical-align: middle;
+  filter: drop-shadow(5px 5px 5px #222);
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+}
+
+@media only screen and (max-width: 660px) {
+  .cutboard > div {
+    font-size: 4vw;
+  }
+  .cutboard > img {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}
+
 /* --- Tags --- */
 
 .blog-tags {
