@@ -615,6 +615,7 @@ footer .theme-by {
 
 .header-section.has-img .no-img {
   height: 25em;
+  margin-top: -2.5em;
   background: #FCFCFC;
   margin: 0 0 40px;
   padding: 20px 0;
