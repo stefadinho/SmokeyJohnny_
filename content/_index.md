@@ -11,8 +11,6 @@ Als de eerste tekenen van de zomer zich voordoen, komen de barbecues weer tevoor
 
 De heerlijke geur van sappig gegrild vlees, heerlijke salades en knapperig stokbrood. Ziet u het al voor u?
 
-![alt](/img/party.jpg)
-
 {{< gallery caption-effect="fade" >}}
   {{< figure link="/img/0.jpg" caption="Tomahawk" >}}
   {{< figure link="/img/1.jpg" caption="Tournado" >}}
