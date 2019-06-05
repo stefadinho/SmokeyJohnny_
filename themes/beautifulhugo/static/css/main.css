@@ -443,6 +443,9 @@ footer .theme-by {
 }
 
 @media only screen and (max-width: 660px) {
+  .cutboard {
+    height: 56vw;
+  }
   .cutboard > div {
     font-size: 4vw;
   }
