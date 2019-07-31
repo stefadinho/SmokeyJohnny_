@@ -112,6 +112,12 @@ img {
   }
 }
 
+/* --- Override Hugo --- */
+
+.gallery {
+  max-width: none !important;
+}
+
 /* --- Override Bootstrap --- */
 
 .container {
