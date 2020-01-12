@@ -1,4 +1,4 @@
-baseurl = "https://www.barbequespecialiststavenuiter.nl/"
+baseurl = "https://www.smokeyjohnie.nl/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
@@ -15,7 +15,7 @@ pygmentCodeFences = true
 googleAnalytics = "UA-102304414-2"
 
 [Params]
-  subtitle = "Barbeque Specialist"
+  subtitle = "Smokey Johnie"
   logo = "/img/logo.png"
   favicon = "/img/favicon.ico"
   dateFormat = "Jan 2, 2006"
