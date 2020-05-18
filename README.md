@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b263d1-d795-455a-954b-e43dc59b609c/deploy-status)](https://app.netlify.com/sites/stavenuiter/deploys)
 
-# Smokey Johnie
+# Smokey Johnny
 
 Stavenuiter barbeque website.
 
