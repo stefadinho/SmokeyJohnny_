@@ -25,7 +25,6 @@ googleAnalytics = "UA-102304414-2"
 
 [[Params.bigimg]]
   src = "/img/retina-background-min.jpg"
-  desc = "Hamburgers"
 
 [Author]
   name = "John"

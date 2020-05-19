@@ -1,5 +1,6 @@
 {{- if not ($.Page.Scratch.Get "meatshopcount") }}<link rel="stylesheet" href="/css/meatshop.css" />{{ end }}
 {{- $.Page.Scratch.Add "meatshopcount" 1 }}
+<br>
 <div class="meatshop">
 	{{- with (.Get "dir") -}}
 		<!-- If a directory was specified, generate figures for all of the images in the directory -->
