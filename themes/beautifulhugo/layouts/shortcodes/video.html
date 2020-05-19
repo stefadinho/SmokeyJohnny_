@@ -1,0 +1,17 @@
+<div {{if .Get "class"}} class='{{.Get "class"}}' {{end}}>
+  <div class="embed-responsive">
+    <video
+      loop
+      muted
+      autoplay
+      playsInline
+      style="background-color: black;"
+      onloadedmetadata="this.muted = true"
+      class="embed-responsive-item">
+      <source
+        src='{{if .Get "src"}}{{.Get "src"}}{{else}}{{.Get 0}}{{end}}'
+        type='video/mp4'>
+      <p>HTML5 video's are not supported on your device.</p>
+    </video>
+  </div>
+  </div>
