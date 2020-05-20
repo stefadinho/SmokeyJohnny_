@@ -3,13 +3,11 @@
 <div class="meatshop">
 	{{ range .Site.Data.producten }}
 	<div class="card">
-		<!-- <div class="bg-img"style="background-image: url('{{ .image }}');"></div> -->
 		<img src="{{ .image }}">
 		<div class="card-content">
 			<h4 class="card-title">{{ .name }}</h4>
 			{{ .caption }}
 			<hr>
-			{{ .description }}
 			<span class="card-price">{{ default 0 .price }}</span>
 		</div>
 	</div>
