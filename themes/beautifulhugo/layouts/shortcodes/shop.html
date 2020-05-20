@@ -10,7 +10,7 @@
 			{{ .caption }}
 			<hr>
 			{{ .description }}
-			€{{ default 0 .price }}
+			<span class="card-price">{{ default 0 .price }}</span>
 		</div>
 	</div>
 	{{ end }}
