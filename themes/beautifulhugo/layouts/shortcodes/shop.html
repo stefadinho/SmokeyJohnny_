@@ -1,12 +1,17 @@
 {{- if not ($.Page.Scratch.Get "meatshopcount") }}<link rel="stylesheet" href="/css/meatshop.css" />{{ end }}
 {{- $.Page.Scratch.Add "meatshopcount" 1 }}
-<br>
-
 <div class="meatshop">
 	{{ range .Site.Data.producten }}
-		{{ .name }}
-		{{ .price }}
-		{{ .caption }}
-		{{ .image }}
+	<div class="card">
+		<!-- <div class="bg-img"style="background-image: url('{{ .image }}');"></div> -->
+		<img src="{{ .image }}">
+		<div class="card-content">
+			<h4 class="card-title">{{ .name }}</h4>
+			{{ .caption }}
+			<hr>
+			{{ .description }}
+			€{{ default 0 .price }}
+		</div>
+	</div>
 	{{ end }}
 </div>

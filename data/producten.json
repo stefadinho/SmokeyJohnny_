@@ -3,6 +3,35 @@
     "name": "varkensnek",
     "price": 20.50,
     "image": "/img/meatpics/0.jpg",
-    "caption": ""
+    "caption": "Het beste stuk van het varken.",
+    "category": "pork"
+  },
+  {
+    "name": "varkensnek",
+    "price": "",
+    "image": "/img/meatpics/3.jpg",
+    "caption": "En nog een.",
+    "category": "pork"
+  },
+  {
+    "name": "varkensnek",
+    "price": 20.50,
+    "image": "/img/meatpics/2jpg",
+    "caption": "En nog een.",
+    "category": "pork"
+  },
+  {
+    "name": "varkensnek",
+    "price": 20.50,
+    "image": "/img/meatpics/2.jpg",
+    "caption": "En nog een.",
+    "category": "pork"
+  },
+  {
+    "name": "varkensnek",
+    "price": 20.50,
+    "image": "/img/meatpics/4.jpg",
+    "caption": "En nog een.",
+    "category": "pork"
   }
 ]
