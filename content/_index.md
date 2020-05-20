@@ -1,6 +1,6 @@
 # De specialist voor de lekkerste BBQ!
 
-Neem contact met ons op! Tel: <a href="tel:0625494569">0625494569</a>
+Schrijf u in voor een workshop, of bestel hier uw vlees! Tel: <a href="tel:0625494569">0625494569</a>
 
 Als de eerste tekenen van de zomer zich voordoen, komen de barbecues weer tevoorschijn. Gezellig met vrienden en familie eten en genieten van een heerlijk drankje en de ondergaande zon.
 
