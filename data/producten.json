@@ -2,7 +2,7 @@
   {
     "name": "Zij lende Kogelbiefstuk",
     "price": 8.64,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/cutboard.png",
     "caption": "Kogelbiefstukken zijn zeer mals met een fijne structuur: pure verwennerij voor vleesliefhebbers. Rood/ medium bereiding geeft een meer mals en sappiger smaakbeleving. Een feestje met champignons en rode wijn.",
     "category": "rund"
   },
@@ -44,49 +44,49 @@
   {
     "name": "Runder gehakt",
     "price": 3.69,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/cutboard.png",
     "caption": "Rundergehakt om eindeloos mee te varieren. Natuurlijk voor een gewone gehaktbal, maar ook voor snackballetjes of soepballetjes of gebruik het geruld in pastasaus en ovengerechten.",
     "category": "rund"
   },
   {
     "name": "Varkenshaas",
     "price": 7.18,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/cutboard.png",
     "caption": "Varkenshaas is mager vlees met een zachte smaak en het toppunt van malsheid. Heerlijk met een klassieke champignonroomsaus. Maak ook eens een superluxe sate met deze varkenshaas.",
     "category": "varken"
   },
   {
     "name": "Varkens kophaas",
     "price": 6.11,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/cutboard.png",
     "caption": "Varkenshaas is mager vlees met een zachte smaak en het toppunt van malsheid: een echte lekkernij. Scharrelvlees, dus extra smakelijk. Heerlijk met champignonroomsaus.",
     "category": "varken"
   },
   {
     "name": "Varkenshaas sate",
     "price": 4.00,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/cutboard.png",
     "caption": "Warm en zonnig weer? Dan kan de bbq aan! Deze varkenspiesjes zijn precies wat je nodig hebt voor op de bbq of grill. Heerlijk mals van smaak en gecombineerd met paprika en ui.",
     "category": "varken"
   },
   {
     "name": "Spare ribs dik",
     "price": 6.98,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/cutboard.png",
     "caption": "Laat de barbecuekooltjes maar gloeien voor deze supermalse, gemarineerde zoete spareribs. Al voorgegaard in traditionele heteluchtovens wat zorgt voor de heerlijke specifieke grillsmaak en de perfecte garing.",
     "category": "varken"
   },
   {
     "name": "Spare ribs dun",
     "price": 3.15,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/cutboard.png",
     "caption": "Heerlijk gemarineerde zoete sparerib die is voorgegaard in traditionele heteluchtovens. Dit zorgt voor de heerlijke specifieke grillsmaak en de perfecte garing. Ideaal voor op de barbecue.",
     "category": "varken"
   },
   {
     "name": "Procureurlapjes",
     "price": 3.50,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/cutboard.png",
     "caption": "Lekker gekruide lapjes.",
     "category": "varken"
   },
@@ -100,28 +100,28 @@
   {
     "name": "Speklappen",
     "price": 2.69,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/cutboard.png",
     "caption": "Ouderwets lekkere speklapjes, alleen nog even kruiden naar smaak en in de pan. Met 1 ster van het beter leven keurmerk. Marineer eens met honing en mosterd, een heerlijke combinatie met witlof.",
     "category": "varken"
   },
   {
     "name": "Buikspek aan een stuk",
     "price": 10.29,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/cutboard.png",
     "caption": "Traditioneel gekruid en gegrild, voor een zoet-pittige smaak.",
     "category": "varken"
   },
   {
     "name": "Kipfilet",
     "price": 4.79,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/producten/4.jpg",
     "caption": "Conventionele kip, gehouden in een stal omgeving met verrijkte dierenwelzijnsaspecten. Malse naturel kipfilet om eindeloos mee te variëren. Lekker met wat kruiden en marinade en makkelijk te snijden in blokjes, reepjes, plakjes etc.",
     "category": "kip"
   },
   {
     "name": "Kippendijen filet",
     "price": 2.65,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/producten/1.jpg",
     "caption": "Deze kipdijfilets zijn van puur kippendijvlees waarvan het bot is verwijderd. Ze zijn ook erg lekker voor op de barbecue.",
     "category": "kip"
   },
