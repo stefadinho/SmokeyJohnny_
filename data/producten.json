@@ -23,7 +23,7 @@
   {
     "name": "Hamburger",
     "price": 3.29,
-    "image": "/img/meatpics/3.jpg",
+    "image": "/img/producten/0.jpg",
     "caption": "Hamburgers gemaakt van mild gekruid rundvlees met een rulle structuur. Een smakelijk stukje vlees voor bij de Hollandse maaltijd en een topper op een broodje met sla, tomaat en ui.",
     "category": "pork"
   },
@@ -93,7 +93,7 @@
   {
     "name": "Filetlapjes/gemarineerd",
     "price": 3.29,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/products/1.jpg",
     "caption": "Magere, naturel lapjes van varkensfilet. Mals en zacht van smaak. Extra dun gesneden, dus snel klaar. Probeer eens als rolletjes gevuld met bieslook en roomkaas.",
     "category": "varken"
   },
@@ -128,7 +128,7 @@
   {
     "name": "Kip sate",
     "price": 4.50,
-    "image": "/img/meatpics/0.jpg",
+    "image": "/img/producten/2.jpg",
     "caption": "Malse gemarineerde kipblokjes aan een spies. Altijd een succes bij de bbq, frites, nasi, bami of gebakken groenten.",
     "category": "kip"
   }
