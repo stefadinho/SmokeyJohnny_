@@ -1,10 +1,15 @@
 ---
 title: "Pakket populair"
-price: 29.60
+price: 5.99
 image: "/img/pakket/populair.jpg"
-subtitle: ""
+subtitle: "Een lekkere mix met Kip spies, Runder Hamburger, Gemarineerd filetlapje, en Kip op stok."
 category: "pakket"
 truncated: false
 ordinal: 0
 ---
 
+Bestaat uit:
+- Kip spies.
+- Runder hamburger.
+- Filetlapje heerlijk gemarineerd.
+- Kip op stok, een stukje kipfilet omwikkeld in ontbijtspek in een pesto kruiden botermarinade.
