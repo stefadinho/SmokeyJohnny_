@@ -22,3 +22,9 @@ If you clone or download this project to your local computer and run `hugo serve
 your site can be accessed under `localhost:1313/hugo/`.
 
 The theme used is adapted from http://themes.gohugo.io/beautifulhugo/.
+
+### TODO
+
+- Upgrade site to higher hugo version
+- Create decent product detail pages
+-
