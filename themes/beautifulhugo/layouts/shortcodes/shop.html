@@ -3,17 +3,19 @@
 
 <div class="meatshop">
 
-	{{ $items := where .Site.Data.producten "category" (.Get "category") }}
+	{{ if .Get "category" }}
 
-	{{ range $items }}
-	<div class="card">
-		<img src="{{ .image }}">
-		<div class="card-content">
-			<h4 class="card-title">{{ .name }}</h4>
-			{{ .caption }}
-			<hr>
-			<span class="card-price">{{ default 0 .price }}</span>
-		</div>
-	</div>
+		{{ $items := where .Site.Data.producten "category" (.Get "category") }}
+
+		{{ range $items }}
+			{{ partial "product.html" . }}
+		{{ end }}
+
+	{{else}}
+
+		{{ range .Site.Data.producten }}
+			{{ partial "product.html" . }}
+		{{ end }}
+
 	{{ end }}
 </div>

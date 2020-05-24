@@ -2,8 +2,7 @@
 date: 2020-05-19T23:05:11+02:00
 subtitle: ""
 tags: []
-title: "Kip"
-truncated: false
+title: "Producten"
 ---
 
-{{< shop category="kip" >}}
+{{< shop >}}

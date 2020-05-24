@@ -1,0 +1,9 @@
+<div class="card">
+  <img src="{{ .image }}">
+  <div class="card-content">
+    <h4 class="card-title">{{ .name }}</h4>
+    {{ .caption }}
+    <hr>
+    <span class="card-price">{{ default 0 .price }}</span>
+  </div>
+</div>
