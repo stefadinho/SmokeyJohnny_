@@ -1,4 +1,4 @@
-baseURL       = "https://www.smokeyjohnny.nl/"
+#  baseURL       = "https://www.smokeyjohnny.nl/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
