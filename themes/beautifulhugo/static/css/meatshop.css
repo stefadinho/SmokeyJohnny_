@@ -1,22 +1,20 @@
 .meatshop {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-auto-flow: dense;
   grid-gap: 2rem;
-}
-
-.meatshop .card:first-child {
-  grid-row: span 2;
 }
 
 .meatshop .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  background-color: white;
+  align-self: start
 }
 
 .meatshop .card .card-content {
   padding: 15px;
   color: black;
-  background-color: white;
 }
 
 .meatshop .card .card-price::before {

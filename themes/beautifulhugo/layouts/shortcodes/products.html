@@ -1,0 +1,22 @@
+<div class="meatshop">
+
+	{{ $products := where .Site.Pages "Type" "products" }}
+	{{ $products := where $products "Kind" "page" }}
+	{{ $products := sort $products ".Params.ordinal" }}
+
+	{{ if .Get "category" }}
+
+		{{ $items := where $products ".Params.category" (.Get "category") }}
+		{{ range $items }}
+			{{ partial "product.html" . }}
+		{{ end }}
+
+	{{else}}
+
+		{{ range $products }}
+			{{ partial "product.html" . }}
+		{{ end }}
+
+	{{ end }}
+
+</div>
