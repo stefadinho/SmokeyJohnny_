@@ -17,6 +17,11 @@
   color: black;
 }
 
+.meatshop .card hr {
+  margin: 1em 0;
+  border-color: #ffc107;
+}
+
 .meatshop .card .card-price::before {
   content: "€";
 }

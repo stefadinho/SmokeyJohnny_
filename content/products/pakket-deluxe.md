@@ -1,6 +1,6 @@
 ---
 title: "Pakket deluxe"
-price: 8.50
+price: "8.50"
 image: "/img/pakket/deluxe.png"
 subtitle: "De beste Ossenhaas spies, Varkenshaas spies, Kip saté spies, en Kip op stok!"
 category: "pakket"

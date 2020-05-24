@@ -1,6 +1,6 @@
 ---
 title: "Procureurlapjes"
-price: 3.50
+price: "3.50"
 image: "/img/placeholder.jpg"
 subtitle: "Lekker gekruide lapjes."
 category: "varken"
