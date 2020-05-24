@@ -2,7 +2,7 @@
 
 Schrijf u in voor een workshop, of bestel hier uw vlees! Tel: <a href="tel:0625494569">0625494569</a>
 
-{{< products category="rund" limit="3" >}}
+{{< products category="kip" limit="3" >}}
 
 Als de eerste tekenen van de zomer zich voordoen, komen de barbecues weer tevoorschijn. De heerlijke geur van sappig gegrild vlees, heerlijke salades en knapperig stokbrood. Gezellig met vrienden en familie eten en genieten van een heerlijk drankje en de ondergaande zon.
 
