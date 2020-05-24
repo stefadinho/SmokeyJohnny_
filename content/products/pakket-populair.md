@@ -8,6 +8,8 @@ truncated: false
 ordinal: 0
 ---
 
+{{< figure link="/img/pakket/populair.png" >}}
+
 Bestaat uit:
 - Kip spies.
 - Runder hamburger.
