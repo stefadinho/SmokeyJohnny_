@@ -2,21 +2,18 @@
 
 	{{ $products := where .Site.Pages "Type" "products" }}
 	{{ $products := where $products "Kind" "page" }}
-	{{ $products := sort $products ".Params.ordinal" }}
+	{{ .Scratch.Set "products" (sort $products ".Params.ordinal") }}
 
 	{{ if .Get "category" }}
+		{{ .Scratch.Set "products" (where (.Scratch.Get "products") ".Params.category" (.Get "category")) }}
+	{{ end }}
 
-		{{ $items := where $products ".Params.category" (.Get "category") }}
-		{{ range $items }}
-			{{ partial "product.html" . }}
-		{{ end }}
+	{{ if .Get "limit" }}
+		{{ .Scratch.Set "products" (first (.Get "limit") (.Scratch.Get "products")) }}
+	{{ end }}
 
-	{{else}}
-
-		{{ range $products }}
-			{{ partial "product.html" . }}
-		{{ end }}
-
+	{{ range .Scratch.Get "products" }}
+		{{ partial "product.html" . }}
 	{{ end }}
 
 </div>
