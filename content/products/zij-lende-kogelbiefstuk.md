@@ -6,4 +6,6 @@ subtitle: "Kogelbiefstukken zijn zeer mals met een fijne structuur: pure verwenn
 category: "rund"
 truncated: false
 ordinal: 0
+date: 2050-01-01
+draft: true
 ---

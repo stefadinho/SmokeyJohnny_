@@ -6,4 +6,6 @@ subtitle: "Malse gemarineerde kipblokjes aan een spies. Altijd een succes bij de
 category: "kip"
 truncated: false
 ordinal: 0
+date: 2050-01-01
+draft: true
 ---

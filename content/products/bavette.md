@@ -6,6 +6,8 @@ subtitle: "De beef bavette is gesneden van de vang van het rund, dit wordt ook w
 category: "rund"
 truncated: false
 ordinal: 0
+date: 2050-01-01
+draft: true
 ---
 
 

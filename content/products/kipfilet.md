@@ -1,5 +1,7 @@
 ---
 ordinal: 0
+date: 2050-01-01
+draft: true
 title: "Kipfilet"
 price: 4.79
 image: "/img/producten/4.jpg"
@@ -7,4 +9,6 @@ subtitle: "Conventionele kip, gehouden in een stal omgeving met verrijkte dieren
 category: "kip"
 truncated: false
 ordinal: 0
+date: 2050-01-01
+draft: true
 ---
