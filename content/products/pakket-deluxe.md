@@ -1,8 +1,8 @@
 ---
 title: "Pakket deluxe"
-price: "8.50"
+price: "8.50 Per Persoon"
 image: "/img/pakket/deluxe.png"
-subtitle: "De beste Ossenhaas spies, Varkenshaas spies, Kip saté spies, en Kip op stok!"
+subtitle: "Voor vier personen: de beste Ossenhaas spies, Varkenshaas spies, Kip saté spies, en Kip op stok!"
 category: "pakket"
 truncated: false
 ordinal: 0

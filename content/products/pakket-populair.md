@@ -1,8 +1,8 @@
 ---
 title: "Pakket populair"
-price: "5.99"
+price: "5.99 Per Persoon"
 image: "/img/pakket/populair.png"
-subtitle: "Een lekkere mix met Kip spies, Runder Hamburger, Gemarineerd filetlapje, en Kip op stok."
+subtitle: "Voor vier personen: een lekkere mix met Kip spies, Runder Hamburger, Gemarineerd filetlapje, en Kip op stok."
 category: "pakket"
 truncated: false
 ordinal: 0
