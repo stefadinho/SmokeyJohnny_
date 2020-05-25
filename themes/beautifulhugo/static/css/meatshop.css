@@ -1,37 +1,30 @@
-.meatshop {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-auto-flow: dense;
-  grid-gap: 2rem;
-}
-
-.meatshop .card {
+.grid .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: white;
   align-self: start;
 }
 
-.meatshop .card .card-content {
+.grid .card .card-content {
   padding: 15px;
   color: black;
 }
 
-.meatshop .card hr {
+.grid .card hr {
   margin: 1em 0;
   border-color: #ffc107;
 }
 
-.meatshop .card .card-price::before {
+.grid .card .card-price::before {
   content: "€";
 }
 
-.meatshop .card .card-price {
+.grid .card .card-price {
   color: green;
   text-decoration: solid;
   font-size: larger;
 }
 
-.meatshop .card:hover {
+.grid .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
