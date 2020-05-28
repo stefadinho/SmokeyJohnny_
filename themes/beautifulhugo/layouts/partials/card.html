@@ -1,0 +1,11 @@
+<div class="card">
+  <a href="{{ .Permalink }}" style="text-decoration: none">
+    <img src="{{ .Params.image }}">
+    <div class="card-content">
+      <h4 class="card-title">{{ .Title }}</h4>
+      {{ .Params.subtitle }}
+      <hr>
+      <span class="price">{{ default 0 .Params.price }}</span>
+    </div>
+  </a>
+</div>

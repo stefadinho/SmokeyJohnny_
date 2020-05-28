@@ -3,25 +3,9 @@ title: "Pakket populair"
 price: "5.99 Per Persoon"
 image: "/img/pakket/populair.png"
 subtitle: "Alleen te bestellen voor vier personen: een lekkere mix met Kip spies, Runder Hamburger, Gemarineerd filetlapje, en Kip op stok."
+body: "Kip op stok is een stukje kipfilet omwikkeld in ontbijtspek in een pesto kruiden botermarinade."
 category: "pakket"
 truncated: false
 ordinal: 0
+items: ["4x Kip spies", "4x Runder hamburger", "4x Filetlapje heerlijk gemarineerd", "4x Kip op stok"]
 ---
-
-<div class="grid">
-
-  <div style="align-self: start">
-    <img src="/img/pakket/deluxe.png">
-  </div>
-  <div style="align-self: start">
-    Bestaat uit:
-    <ol>
-      <li>Kip spies.</li>
-      <li>Runder hamburger.</li>
-      <li>Filetlapje heerlijk gemarineerd.</li>
-      <li>Kip op stok, een stukje kipfilet omwikkeld in ontbijtspek in een pesto kruiden botermarinade.</li>
-    </ol>
-  </div>
-</div>
-
-<br>
