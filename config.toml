@@ -1,5 +1,5 @@
 baseURL       = "https://stavenuiterpreview.netlify.app/"
-title         = "Smokey Johnny (preview)"
+title         = "Smokey Johnny (demo)"
 
 contentdir    = "content"
 layoutdir     = "layouts"
