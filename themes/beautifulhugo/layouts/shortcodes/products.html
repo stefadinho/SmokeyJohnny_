@@ -1,0 +1,19 @@
+<div class="grid">
+
+	{{ $products := where .Site.Pages "Type" "products" }}
+	{{ $products := where $products "Kind" "page" }}
+	{{ .Scratch.Set "products" (sort $products ".Params.ordinal") }}
+
+	{{ if .Get "category" }}
+		{{ .Scratch.Set "products" (where (.Scratch.Get "products") ".Params.category" (.Get "category")) }}
+	{{ end }}
+
+	{{ if .Get "limit" }}
+		{{ .Scratch.Set "products" (first (.Get "limit") (.Scratch.Get "products")) }}
+	{{ end }}
+
+	{{ range .Scratch.Get "products" }}
+		{{ partial "card.html" . }}
+	{{ end }}
+
+</div>

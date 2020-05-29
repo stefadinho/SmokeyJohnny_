@@ -22,10 +22,6 @@
 - id: pageNotFound
   translation: "Oeps, deze pagina bestaat niet. (404 error)"
 
-# Footer
-- id: poweredBy # Accepts HTML
-  translation: 'Webdesign: <a href="https://www.linkedin.com/in/stefanschenk/">Stefan Schenk</a>'
-
 # Navigation
 - id: toggleNavigation
   translation: "Navigatie aan/uit"
@@ -37,4 +33,3 @@
   translation: "Zoek {{ .Site.Title }}"
 - id: gcseClose
   translation: "Sluiten"
-

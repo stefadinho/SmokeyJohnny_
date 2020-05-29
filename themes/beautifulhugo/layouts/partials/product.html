@@ -1,0 +1,25 @@
+<h3>{{ .Title }}</h3>
+
+<p>{{ .Params.subtitle }}</p>
+
+<div class="grid">
+  <div style="align-self: start; border: 2px solid #ad8d2c">
+    <img src="{{ .Params.image }}">
+  </div>
+  <div style="align-self: start; margin-left: 1vw">
+    {{ if .Params.items }}
+      Bestaat uit:<br>
+      {{ range .Params.items }}
+      &nbsp;&nbsp;{{ . }}<br>
+      {{ end }}
+    {{ end }}
+    <p>{{ .Params.body }}</p>
+    <span class="price">{{ default 0 .Params.price }}</span>
+  </div>
+</div>
+
+<br>
+
+<a href="/page/bestellen" class="btn">Bestel ➔</a>
+
+<br>

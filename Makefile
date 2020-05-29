@@ -1,3 +1,4 @@
 
 run:
-	hugo server
+	export HUGO_VERSION=0.19
+	hugo server -FD

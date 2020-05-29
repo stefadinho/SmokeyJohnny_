@@ -1,0 +1,11 @@
+---
+title: "Varkens kophaas"
+price: "6.11"
+image: "/img/placeholder.jpg"
+subtitle: "Varkenshaas is mager vlees met een zachte smaak en het toppunt van malsheid: een echte lekkernij. Scharrelvlees, dus extra smakelijk. Heerlijk met champignonroomsaus."
+category: "varken"
+truncated: false
+ordinal: 0
+date: 2050-01-01
+draft: true
+---

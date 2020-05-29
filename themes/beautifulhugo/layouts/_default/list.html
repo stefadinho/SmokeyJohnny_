@@ -28,14 +28,18 @@
             <article class="post-preview">
               <a href="{{ .Permalink }}">
                 <h2 class="post-title">{{ .Title }}</h2>
-    
+
+                {{ if .Params.image }}
+                  <img src="{{ .Params.image }}">
+                {{ end }}
+
                 {{ if .Params.subtitle }}
                   <h3 class="post-subtitle">
                     {{ .Params.subtitle }}
                   </h3>
                 {{ end }}
               </a>
-    
+
               <p class="post-meta">
                 {{ default (i18n "dateFormat") .Site.Params.dateformat | .Date.Format | i18n "postedOnDate" }}
               </p>
@@ -47,7 +51,7 @@
                   {{ .Content }}
                 {{ end }}
               </div>
-    
+
               {{ if .Params.tags }}
                 <span class="post-meta">
                   {{ range .Params.tags }}
@@ -55,7 +59,7 @@
                   {{ end }}
                 </span>
               {{ end }}
-    
+
             </article>
           {{ end }}
         </div>

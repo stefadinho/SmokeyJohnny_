@@ -4,9 +4,12 @@ subtitle: Wij denken graag met u mee
 comments: false
 ---
 
-Contactinformatie:
+Bestellen kan op de volgende manieren:
 
-- Tel: <a href="tel:0625494569">0625494569</a>
+- Facebook: <a href="https://m.me/slagerijstavenuiter">m.me/slagerijstavenuiter</a>
 - Mail: <a href="mailto:jstavenuiter@quicknet.nl">jstavenuiter@quicknet.nl</a>
+- Tel: <a href="tel:0625494569">0625494569</a>
 
-![alt](/img/cow.png)
+Uw bestelling kan worden opgehaald in Andijk, Noord-Holland.
+
+<img src="/img/cow.png" width="750px">
