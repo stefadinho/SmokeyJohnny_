@@ -1,8 +1,9 @@
-#  baseURL       = "https://www.smokeyjohnny.nl/"
+baseURL       = "https://stavenuiterpreview.netlify.app/"
+title         = "Smokey Johnny (preview)"
+
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = "Smokey Johnny"
 canonifyurls  = true
 enableGitInfo = true
 enableRobotsTXT = true
