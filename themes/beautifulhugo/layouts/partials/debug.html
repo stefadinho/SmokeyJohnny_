@@ -1,9 +1,37 @@
 <!-- Use as { partial "debug.html" . } -->
+{{ if true }}
+<div class="pre">
+  {{ printf "%#v" . }}
+</div>
+{{ else }}
 <pre id="debug-output">
-  {{ jsonify . }}
+  {{ . | jsonify }}
 </pre>
+{{ end }}
+
 <script>
   var el = document.getElementById("debug-output");
-  var obj = JSON.parse(el.innerText);
-  el.textContent = JSON.stringify(obj, undefined, 2);
+  if (el) {
+    var obj = JSON.parse(el.innerText);
+    el.textContent = JSON.stringify(obj, undefined, 2);
+  }
 </script>
+
+<style>
+.pre {
+  font-size: 16px;
+  line-height: 1.5em;
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+</style>
+
