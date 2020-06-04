@@ -1,2 +1,9 @@
 <!-- Use as { partial "debug.html" . } -->
-{{ printf "%#v" . }}
+<pre id="debug-output">
+  {{ jsonify . }}
+</pre>
+<script>
+  var el = document.getElementById("debug-output");
+  var obj = JSON.parse(el.innerText);
+  el.textContent = JSON.stringify(obj, undefined, 2);
+</script>
