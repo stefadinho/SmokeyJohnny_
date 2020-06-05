@@ -6,10 +6,10 @@ comments: false
 
 Bestellen kan op de volgende manieren:
 
-- Facebook: <a href="https://m.me/slagerijstavenuiter">m.me/slagerijstavenuiter</a>
-- Mail: <a href="mailto:jstavenuiter@quicknet.nl">jstavenuiter@quicknet.nl</a>
-- Tel: <a href="tel:0625494569">0625494569</a>
+- Facebook: [m.me/slagerijstavenuiter](https://m.me/slagerijstavenuiter)</a>
+- Mail: [jstavenuiter@quicknet.nl](mailto:jstavenuiter@quicknet.nl)</a>
+- Tel: [0625494569](tel:0625494569)</a>
 
 Uw bestelling kan worden opgehaald in Andijk, Noord-Holland.
 
-<img src="/img/cow.png" width="750px">
+![koe anatomie](/img/cow.png#750)

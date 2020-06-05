@@ -112,6 +112,10 @@ img {
   max-width: 100%;
 }
 
+img[src*="#750"] {
+  width: 750px;
+}
+
 .disqus-comments {
   margin-top: 30px;
 }
