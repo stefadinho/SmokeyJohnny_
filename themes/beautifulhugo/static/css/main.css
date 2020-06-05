@@ -884,19 +884,19 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gs
   margin: 2vw;
 }
 
-.grid .card {
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: white;
   align-self: start;
 }
 
-.grid .card .card-content {
+.card .card-content {
   padding: 15px;
   color: black;
 }
 
-.grid .card hr {
+.card hr {
   margin: 1em 0;
   border-color: #ffc107;
 }
@@ -911,6 +911,6 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gs
   font-size: larger;
 }
 
-.grid .card:hover {
+.card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
