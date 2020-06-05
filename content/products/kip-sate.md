@@ -1,7 +1,7 @@
 ---
 title: "Kip sate"
 price: "4.50"
-image: "/img/producten/2.jpg"
+image: "/img/producten/kip-sate-spies.jpg"
 subtitle: "Malse gemarineerde kipblokjes aan een spies. Altijd een succes bij de bbq, frites, nasi, bami of gebakken groenten."
 category: "kip"
 truncated: false
