@@ -1,7 +1,7 @@
 ---
 title: "Varkenshaas sate"
 price: "4.00"
-image: "/img/producten/varkenshaas-spies.jpg"
+image: "/img/producten/varkenshaas-sate.jpg"
 subtitle: "Warm en zonnig weer? Dan kan de bbq aan! Deze varkenspiesjes zijn precies wat je nodig hebt voor op de bbq of grill. Heerlijk mals van smaak en gecombineerd met paprika en ui."
 category: "varken"
 truncated: false
