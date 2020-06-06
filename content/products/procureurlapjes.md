@@ -1,7 +1,7 @@
 ---
 title: "Procureurlapjes"
 price: "3.50"
-image: "/img/placeholder.jpg"
+image: "/img/producten/procureurlapjes.jpg"
 subtitle: "Lekker gekruide lapjes."
 category: "varken"
 truncated: false
