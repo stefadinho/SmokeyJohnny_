@@ -882,6 +882,7 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gs
   grid-auto-flow: dense;
   grid-gap: 2rem;
   margin: 0.2vw;
+  margin-bottom: 1vw;
 }
 
 .grid .card {
