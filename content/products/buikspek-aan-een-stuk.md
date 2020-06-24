@@ -1,5 +1,5 @@
 ---
-ordinal: 0
+ordinal: 100
 date: 2050-01-01
 draft: true
 title: "Buikspek aan een stuk"
@@ -8,7 +8,7 @@ image: "/img/producten/buikspek.jpg"
 subtitle: "Traditioneel gekruid en gegrild, voor een zoet-pittige smaak."
 category: "varken"
 truncated: false
-ordinal: 0
+ordinal: -1
 date: 2050-01-01
 draft: true
 ---
