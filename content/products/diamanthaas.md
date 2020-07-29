@@ -6,6 +6,6 @@ subtitle: "De diamanthaas is een zeer mals stukje vlees uit de voorpoot van een 
 category: "rund"
 truncated: false
 ordinal: 0
-date: 2050-01-01
-draft: true
+date: 2020-01-01
+draft: false
 ---

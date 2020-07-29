@@ -6,6 +6,6 @@ subtitle: "Sukadelappen met een boterzachte smaak, van runderen uit Ierland. Zac
 category: "rund"
 truncated: false
 ordinal: -1
-date: 2050-01-01
-draft: true
+date: 2020-01-01
+draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 ordinal: -3
-date: 2050-01-01
-draft: true
+date: 2020-01-01
+draft: false
 title: "Voorgegaarde spare ribs"
 price: "13.50 per kilo"
 image: "/img/producten/voorgegaardespareribs.jpg"

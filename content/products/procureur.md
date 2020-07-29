@@ -6,6 +6,6 @@ subtitle: "Waar varkensnek vroeger vooral gebruikt werd voor rollade en schouder
 category: "varken"
 truncated: false
 ordinal: 0
-date: 2050-01-01
-draft: true
+date: 2020-01-01
+draft: false
 ---

@@ -6,6 +6,6 @@ subtitle: "Varkenshaas is mager vlees met een zachte smaak en het toppunt van ma
 category: "varken"
 truncated: false
 ordinal: -2
-date: 2050-01-01
-draft: true
+date: 2020-01-01
+draft: false
 ---

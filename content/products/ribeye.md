@@ -6,6 +6,6 @@ subtitle: "Met gras gevoerd rundvlees uit Nederland staat bekend om zijn absolut
 category: "rund"
 truncated: false
 ordinal: -3
-date: 2050-01-01
-draft: true
+date: 2020-01-01
+draft: false
 ---
