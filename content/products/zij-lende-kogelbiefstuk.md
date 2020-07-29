@@ -1,6 +1,6 @@
 ---
 title: "Zij lende Kogelbiefstuk"
-price: "8.64"
+price: "24.90 per kilo"
 image: "/img/producten/zij-lende-kogelbiefstuk.jpg"
 subtitle: "Kogelbiefstukken zijn zeer mals met een fijne structuur: pure verwennerij voor vleesliefhebbers. Rood/ medium bereiding geeft een meer mals en sappiger smaakbeleving. Een feestje met champignons en rode wijn."
 category: "rund"
