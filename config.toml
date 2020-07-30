@@ -56,13 +56,20 @@ googleAnalytics = "UA-102304414-2"
 [[menu.main]]
     name = "Bestellen"
     url = "page/bestellen/"
+    weight = 999
+[[menu.main]]
+    name = "⋆ Rund"
+    url = "page/rund/"
+    weight = 1
+[[menu.main]]
+    name = "⋆ Varken"
+    url = "page/varken/"
+    weight = 2
+[[menu.main]]
+    name = "⋆ Kip"
+    url = "page/kip/"
     weight = 3
 
-#[[menu.main]]
-#    identifier = "samples"
-#    name = "Samples"
-#    weight = 2
-#
 #[[menu.main]]
 #    parent = "samples"
 #    name = "Big Image Sample"
