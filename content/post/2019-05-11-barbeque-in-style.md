@@ -1,5 +1,5 @@
 ---
-title: Workshops - Barbeque in style
+title: Barbeque in style
 # subtitle: Barbeque in style
 date: 2019-05-11
 # tags: ["style"]
