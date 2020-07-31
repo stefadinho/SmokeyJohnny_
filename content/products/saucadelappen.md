@@ -1,11 +1,11 @@
 ---
-title: "Sucadelappen"
-price: "6.99"
-image: "/img/meatpics/5.jpg"
-subtitle: "Sukadelappen met een boterzachte smaak, van runderen uit Ierland. Zachtjes laten sudderen tot het bijna uit elkaar valt. Om eindeloos mee te varieren, bijvoorbeeld in een indonesisch stoofgerecht."
+title: "Saucadelappen"
+price: "10.99 per kilo"
+image: "/img/producten/saucadelappen.jpg"
+subtitle: "Saucadelappen met een boterzachte smaak, van runderen uit Ierland. Zachtjes laten sudderen tot het bijna uit elkaar valt. Om eindeloos mee te varieren, bijvoorbeeld in een indonesisch stoofgerecht."
 category: "rund"
 truncated: false
-ordinal: 0
-date: 2050-01-01
-draft: true
+ordinal: -1
+date: 2020-01-01
+draft: false
 ---

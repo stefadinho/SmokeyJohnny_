@@ -2,7 +2,8 @@
 HUGO_VERSION=0.72.0
 
 run:
-	export HUGO_VERSION=$(HUGO_VERSION)
+	@echo Required Hugo Version: $(HUGO_VERSION)
+	@echo Running Hugo Version: $$(hugo version)
 	hugo server -FD
 
 install-hugo:

@@ -10,6 +10,6 @@ Bestellen kan op de volgende manieren:
 - Mail: [jstavenuiter@quicknet.nl](mailto:jstavenuiter@quicknet.nl)</a>
 - Tel: [0625494569](tel:0625494569)</a>
 
-Uw bestelling kan worden opgehaald in Andijk, Noord-Holland.
+Uw bestelling kan worden opgehaald aan Industrieweg 3, 1619BZ in Andijk, Noord-Holland.
 
 ![koe anatomie](/img/cow.png#750)
