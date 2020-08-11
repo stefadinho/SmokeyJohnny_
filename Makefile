@@ -1,10 +1,15 @@
 
 HUGO_VERSION=0.72.0
+LOCALIP := $(shell hostname -I | awk '{print $$1}')
 
 run:
 	@echo Required Hugo Version: $(HUGO_VERSION)
 	@echo Running Hugo Version: $$(hugo version)
 	hugo server -FD
+
+serve-subnet:
+	@echo Using local ip on network to host: $(LOCALIP)
+	@hugo server -DF -b http://$(LOCALIP) --bind $(LOCALIP)
 
 install-hugo:
 	# https://api.github.com/repos/gohugoio/hugo/releases
