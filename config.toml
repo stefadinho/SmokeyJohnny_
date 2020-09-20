@@ -69,6 +69,10 @@ googleAnalytics = "UA-102304414-2"
     name = "⋆ Kip"
     url = "page/kip/"
     weight = 3
+[[menu.main]]
+    name = "⋆ Sauzen"
+    url = "page/overig/"
+    weight = 4
 
 #[[menu.main]]
 #    parent = "samples"
