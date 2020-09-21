@@ -1,7 +1,7 @@
 ---
 title: "De hele lijn 6 rubs en 4 marinades"
 price: "49.99"
-image: "/img/producten/sauzen2.jpg"
+image: "/img/producten/sauzen3.jpg"
 subtitle: "De beste Rubs en Sauzen bij elkaar."
 category: "overig"
 truncated: false

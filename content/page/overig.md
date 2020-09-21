@@ -1,5 +1,5 @@
 ---
-title: Rubs & Sauzen
+title: Rubs
 subtitle: Wij denken graag met u mee
 comments: false
 ---

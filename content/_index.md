@@ -20,7 +20,7 @@ Een sappige wok, of geurige barbeque. Dat je met varkensvlees alle kanten op kan
 
 {{< products category="varken" limit="3" >}}
 
-### [Rubs & Sauzen](page/overig)
+### [Rubs](page/overig)
 
 Rubs, Sauzen, Marinades, en overig barbeque materiaal.
 

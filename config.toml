@@ -70,7 +70,7 @@ googleAnalytics = "UA-102304414-2"
     url = "page/kip/"
     weight = 3
 [[menu.main]]
-    name = "⋆ Sauzen"
+    name = "⋆ Rubs"
     url = "page/overig/"
     weight = 4
 
