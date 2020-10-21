@@ -4,6 +4,10 @@
 	{{ $products := where $products "Kind" "page" }}
 	{{ .Scratch.Set "products" (sort $products ".Params.ordinal") }}
 
+	{{ if .Get "action" }}
+		{{ .Scratch.Set "products" (where (.Scratch.Get "products") ".Params.action" true) }}
+	{{ end }}
+
 	{{ if .Get "category" }}
 		{{ .Scratch.Set "products" (where (.Scratch.Get "products") ".Params.category" (.Get "category")) }}
 	{{ end }}
