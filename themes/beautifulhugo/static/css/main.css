@@ -892,6 +892,14 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gs
   align-self: start;
 }
 
+.card.action {
+  box-shadow: 0 0px 8px 0 orange;
+}
+
+.card.action:hover {
+  box-shadow: 0 0px 16px 0 orange;
+}
+
 .card .card-content {
   padding: 15px;
   color: black;
@@ -910,6 +918,10 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gs
   color: green;
   text-decoration: solid;
   font-size: larger;
+}
+
+.price.action {
+  color: darkgoldenrod;
 }
 
 .card:hover {

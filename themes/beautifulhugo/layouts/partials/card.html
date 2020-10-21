@@ -1,11 +1,16 @@
-<div class="card">
+<div class="card {{ if .Params.action }}action{{ end }}">
   <a href="{{ .Permalink }}" style="text-decoration: none">
     <img src="{{ .Params.image }}">
     <div class="card-content">
       <h4 class="card-title">{{ .Title }}</h4>
       {{ .Params.subtitle }}
       <hr>
-      <span class="price">{{ default 0 .Params.price }}</span>
+      <span class="price {{ if .Params.action }}action{{ end }}">
+        {{ default 0 .Params.price }}
+        {{ if .Params.action }}
+          <img src="/img/actie.png" width="50px" style="display: inline"></img>
+        {{ end }}
+      </span>
     </div>
   </a>
 </div>

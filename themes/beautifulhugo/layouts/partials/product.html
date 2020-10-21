@@ -14,7 +14,12 @@
       {{ end }}
     {{ end }}
     <p>{{ .Params.body }}</p>
-    <span class="price">{{ default 0 .Params.price }}</span>
+    <span class="price {{ if .Params.action }}action{{ end }}">
+      {{ default 0 .Params.price }}
+      {{ if .Params.action }}
+        <img src="/img/actie.png" width="50px" style="display: inline"></img>
+      {{ end }}
+    </span>
   </div>
 </div>
 
