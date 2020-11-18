@@ -1,6 +1,6 @@
 ---
 title: "Gourmet schotel"
-price: "6.50 Per Persoon"
+price: "6.99 Per Persoon"
 image: "/img/pakket/gourmetschotel.jpg"
 subtitle: "Lekker een gezellig avondje goumetten met vrienden of familie."
 body: ""
