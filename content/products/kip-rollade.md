@@ -2,7 +2,7 @@
 action: false
 ordinal: 0
 title: "Kip rollade"
-price: "7.99 per kilo"
+price: "8.50 per kilo"
 image: "/img/producten/kip-rollade.jpg"
 subtitle: "Heerlijk stuk kip."
 category: "kip"
