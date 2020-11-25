@@ -1,8 +1,8 @@
 ---
-action: true
+action: false
 ordinal: 0
 title: "Kipshoarma"
-price: "8.00 per kilo"
+price: "8.99 per kilo"
 image: "/img/producten/kipshoarma.jpg"
 subtitle: "Mocht je lekker shoarma willen eten maar wel gezond willen doen, dan is deze kipshoarma een goed alternatief."
 category: "kip"
