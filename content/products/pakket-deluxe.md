@@ -6,6 +6,6 @@ subtitle: "Alleen te bestellen voor vier personen: de beste Ossenhaas spies, Var
 body: "De beste vleesspiesen in één pakket."
 category: "pakket"
 truncated: false
-ordinal: 2
+ordinal: 3
 items: ["4x Ossenhaas spies", "4x Varkenshaas spies", "4x Kip saté spies", "4x Kip op stok"]
 ---
