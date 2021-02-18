@@ -1,6 +1,6 @@
 ---
 title: "Rundergehakt"
-price: "€6.99 per kilo"
+price: "6.99 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "rund"

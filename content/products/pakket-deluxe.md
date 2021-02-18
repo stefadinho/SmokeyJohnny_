@@ -1,6 +1,6 @@
 ---
 title: "Pakket deluxe"
-price: "8.50 Per Persoon"
+price: "8.50 per persoon"
 image: "/img/pakket/deluxe.png"
 subtitle: "Alleen te bestellen voor vier personen: de beste Ossenhaas spies, Varkenshaas spies, Kip saté spies, en Kip op stok!"
 body: "De beste vleesspiesen in één pakket."

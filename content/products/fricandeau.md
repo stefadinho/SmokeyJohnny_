@@ -1,6 +1,6 @@
 ---
 title: "Fricandeau"
-price: "€8.00 per kilo"
+price: "8.00 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "varken"

@@ -1,6 +1,6 @@
 ---
 title: "Varken Schnitzels gepaneerd"
-price: "€11.90 per kilo"
+price: "11.90 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "varken"

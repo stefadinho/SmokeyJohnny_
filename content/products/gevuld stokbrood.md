@@ -1,6 +1,6 @@
 ---
 title: "gevuld stokbrood"
-price: "€2.99 per kilo"
+price: "2.99 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "overig"

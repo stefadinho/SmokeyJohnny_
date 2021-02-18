@@ -1,6 +1,6 @@
 ---
 title: "Schouderfiletrollade"
-price: "€10.50 per kilo"
+price: "10.50 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "varken"

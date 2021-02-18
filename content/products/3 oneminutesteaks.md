@@ -1,6 +1,6 @@
 ---
 title: "3 Oneminutesteaks"
-price: "€7.99 per kilo"
+price: "7.99 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "rund"

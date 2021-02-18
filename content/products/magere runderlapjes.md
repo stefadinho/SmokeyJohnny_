@@ -1,6 +1,6 @@
 ---
 title: "Magere Runderlapjes"
-price: "€11.99 per kilo"
+price: "11.99 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "rund"

@@ -1,6 +1,6 @@
 ---
 title: "Biefstukspies"
-price: "€19.00 per kilo"
+price: "19.00 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "rund"

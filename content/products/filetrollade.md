@@ -1,6 +1,6 @@
 ---
 title: "Filetrollade"
-price: "€10.90 per kilo"
+price: "10.90 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "varken"

@@ -1,6 +1,6 @@
 ---
 title: "carpaccio rolletjes"
-price: "€19.90 per kilo"
+price: "19.90 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "rund"

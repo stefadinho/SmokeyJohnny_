@@ -1,6 +1,6 @@
 ---
 title: "Speklapjes ongekruid"
-price: "€9.00 per kilo"
+price: "9.00 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "varken"

@@ -1,6 +1,6 @@
 ---
 title: "Haassate"
-price: "€14.00 per kilo"
+price: "14.00 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "varken"

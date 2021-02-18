@@ -1,6 +1,6 @@
 ---
 title: "4 Kant-en-klare gehaktbal"
-price: "€5.20 per kilo"
+price: "5.20 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "gegaard"

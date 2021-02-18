@@ -1,6 +1,6 @@
 ---
 title: "Ossenhaaspuntjes"
-price: "€25.00 per kilo"
+price: "25.00 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "rund"
