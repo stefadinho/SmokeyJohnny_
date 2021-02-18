@@ -18,9 +18,13 @@
 
 	{{ if .Get "compact" }}
 		<div style="margin: 0 .5em">
-		{{ range .Scratch.Get "products" }}
-			{{ partial "card-compact.html" . }}
-		{{ end }}
+			<div class="container">
+				<div class="row">
+				{{ range .Scratch.Get "products" }}
+					{{ partial "card-compact.html" . }}
+				{{ end }}
+				</div>
+			</div>
 		</div>
 	{{ else }}
 		{{ range .Scratch.Get "products" }}
