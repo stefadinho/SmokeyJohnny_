@@ -1,9 +1,9 @@
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 word-break">
   <a href="{{ .Permalink }}" style="text-decoration: none; color: white">
     {{ .Title }}
   </a>
 </div>
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 word-break">
   <span class="price price-compact {{ if .Params.action }}action{{ end }}">
     {{ default 0 .Params.price }}
   </span>
