@@ -20,6 +20,14 @@ comments: false
 
 {{< products category="pakket" compact="true" >}}
 
-### [Rubs](/page/overig)
+### [Overige](/page/overig)
 
 {{< products category="overig" compact="true" >}}
+
+### [Gegaard](/page/Gegaard)
+
+{{< products category="gegaard" compact="true" >}}
+
+<!-- ### [Salades](/page/Salades)
+
+{{< products category="salade" compact="true" >}} -->
