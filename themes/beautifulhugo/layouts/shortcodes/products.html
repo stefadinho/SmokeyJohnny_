@@ -1,4 +1,4 @@
-<div class="grid">
+<div class='grid'>
 
 	{{ $products := where .Site.Pages "Type" "products" }}
 	{{ $products := where $products "Kind" "page" }}
@@ -16,8 +16,16 @@
 		{{ .Scratch.Set "products" (first (.Get "limit") (.Scratch.Get "products")) }}
 	{{ end }}
 
-	{{ range .Scratch.Get "products" }}
-		{{ partial "card.html" . }}
+	{{ if .Get "compact" }}
+		<div style="margin: 0 .5em">
+		{{ range .Scratch.Get "products" }}
+			{{ partial "card-compact.html" . }}
+		{{ end }}
+		</div>
+	{{ else }}
+		{{ range .Scratch.Get "products" }}
+			{{ partial "card.html" . }}
+		{{ end }}
 	{{ end }}
 
 </div>

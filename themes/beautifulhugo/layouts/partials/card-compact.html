@@ -1,0 +1,8 @@
+<div class="card card-compact {{ if .Params.action }}action{{ end }}">
+  <a href="{{ .Permalink }}" style="text-decoration: none">
+    {{ .Title }}
+    <span class="price price-compact {{ if .Params.action }}action{{ end }}">
+      {{ default 0 .Params.price }}
+    </span>
+  </a>
+</div>

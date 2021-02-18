@@ -12,4 +12,6 @@ Bestellen kan op de volgende manieren:
 
 Uw bestelling kan worden opgehaald aan Industrieweg 3, 1619BZ in Andijk, Noord-Holland.
 
+Bezorgen in overleg.
+
 ![koe anatomie](/img/cow.png#750)

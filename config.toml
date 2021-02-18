@@ -15,7 +15,7 @@ pygmentCodeFences = true
 googleAnalytics = "UA-102304414-2"
 
 [Params]
-  subtitle = "Barbeque Specialist"
+  subtitle = "Uw Online Slagerij & Barbeque Specialist"
   logo = "/img/logo.png"
   favicon = "/img/favicon.ico"
   dateFormat = "Jan 2, 2006"
@@ -58,25 +58,9 @@ googleAnalytics = "UA-102304414-2"
     url = "page/bestellen/"
     weight = 999
 [[menu.main]]
-    name = "⋆ Rund"
-    url = "page/rund/"
+    name = "⋆ Assortiment"
+    url = "page/assortiment/"
     weight = 1
-[[menu.main]]
-    name = "⋆ Varken"
-    url = "page/varken/"
-    weight = 2
-[[menu.main]]
-    name = "⋆ Kip"
-    url = "page/kip/"
-    weight = 3
-[[menu.main]]
-    name = "⋆ Rubs"
-    url = "page/overig/"
-    weight = 4
-[[menu.main]]
-    name = "⋆ Pakketten"
-    url = "page/pakket/"
-    weight = 5
 
 #[[menu.main]]
 #    parent = "samples"

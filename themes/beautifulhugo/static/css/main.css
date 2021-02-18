@@ -2,6 +2,7 @@
 :root {
   --primary: #d40002;
   --secondary: #0c0a0b;
+  --success: #4caf50;
 }
 
 /* --- General --- */
@@ -654,7 +655,13 @@ footer .theme-by {
 }
 
 .header-section {
-  margin-top: 9em;
+  margin-top: 5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-section {
+    margin-top: 9em;
+  }
 }
 
 .header-section.has-img {
@@ -892,12 +899,28 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gs
   align-self: start;
 }
 
+.card.card-compact {
+  background-color: transparent;
+}
+
+.card.card-compact a {
+  color: white;
+}
+
 .card.action {
   box-shadow: 0 0px 8px 0 orange;
 }
 
 .card.action:hover {
   box-shadow: 0 0px 16px 0 orange;
+}
+
+.card.action.card-compact {
+  box-shadow: initial;
+}
+
+.card.action.card-compact:hover {
+  box-shadow: initial;
 }
 
 .card .card-content {
@@ -915,9 +938,14 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gs
 }
 
 .price {
-  color: green;
+  color: var(--success);
   text-decoration: solid;
   font-size: larger;
+}
+
+.price.price-compact {
+  font-size: inherit;
+  text-align: right;
 }
 
 .price.action {
