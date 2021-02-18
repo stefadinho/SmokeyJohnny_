@@ -275,10 +275,6 @@ img[src*="#750"] {
 
 /* Multi-level navigation links */
 
-.word-break {
-  word-break: break-all;
-}
-
 .navbar-custom .nav .navlinks-container {
   position: relative;
 }
