@@ -1,6 +1,6 @@
 ---
-title: "4 Kant-en-klare gehaktbal"
-price: "5.20 per kilo"
+title: "4 Kant-En-Klare Gehaktbal"
+price: "5.20 per pakje"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "gegaard"

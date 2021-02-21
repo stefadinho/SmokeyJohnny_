@@ -1,5 +1,5 @@
 ---
-title: "carpaccio rolletjes"
+title: "Carpaccio Rolletjes"
 price: "19.90 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""

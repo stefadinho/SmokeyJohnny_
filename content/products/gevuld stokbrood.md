@@ -1,6 +1,6 @@
 ---
-title: "gevuld stokbrood"
-price: "2.99 per kilo"
+title: "Gevuld Stokbrood"
+price: "2.99 per stuk"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "overig"

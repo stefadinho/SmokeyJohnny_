@@ -1,6 +1,6 @@
 ---
-title: "4 Filetlapjes ongemarineerd"
-price: "4.00 per kilo"
+title: "4 Filetlapjes Ongemarineerd"
+price: "4.00 per 4 stuks"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "varken"

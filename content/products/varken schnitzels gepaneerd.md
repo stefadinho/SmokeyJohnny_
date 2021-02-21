@@ -1,5 +1,5 @@
 ---
-title: "Varken Schnitzels gepaneerd"
+title: "Varken Schnitzels Gepaneerd"
 price: "11.90 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""

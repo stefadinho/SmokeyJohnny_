@@ -1,5 +1,5 @@
 ---
-title: "Speklapjes ongekruid"
+title: "Speklapjes Ongekruid"
 price: "9.00 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""

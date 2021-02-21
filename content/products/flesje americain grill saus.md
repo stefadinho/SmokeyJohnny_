@@ -1,5 +1,5 @@
 ---
-title: "Flesje Americain grill saus"
+title: "Flesje Americain Grill Saus"
 price: "2,75 per stuk"
 image: "/img/placeholder.jpg"
 subtitle: ""

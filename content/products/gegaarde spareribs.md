@@ -1,5 +1,5 @@
 ---
-title: "Gegaarde spareribs"
+title: "Gegaarde Spareribs"
 price: "10.99 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""

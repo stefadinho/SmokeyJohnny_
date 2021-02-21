@@ -1,5 +1,5 @@
 ---
-title: "tortillas"
+title: "Tortillas"
 price: "2,50 per stuk"
 image: "/img/placeholder.jpg"
 subtitle: ""
