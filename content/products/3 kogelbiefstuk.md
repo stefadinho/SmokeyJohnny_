@@ -1,6 +1,6 @@
 ---
 title: "3 Kogelbiefstuk"
-price: "7.99 per kilo"
+price: "7.99 per 3 stuks"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "rund"
