@@ -3,7 +3,7 @@ title: "Kip Op Stok"
 price: "4 voor 6,99 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
-category: ""
+category: "kip"
 weight: ""
 truncated: False
 ordinal: 0

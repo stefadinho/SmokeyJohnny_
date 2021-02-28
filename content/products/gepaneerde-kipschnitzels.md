@@ -1,9 +1,9 @@
 ---
 title: "Gepaneerde Kipschnitzels"
-price: "4 voor 4,50 per kilo"
+price: "4 voor 4,50"
 image: "/img/placeholder.jpg"
 subtitle: ""
-category: ""
+category: "kip"
 weight: ""
 truncated: False
 ordinal: 0
