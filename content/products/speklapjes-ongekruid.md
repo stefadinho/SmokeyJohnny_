@@ -4,8 +4,10 @@ price: "9.00 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "varken"
-truncated: false
+weight: ""
+truncated: False
 ordinal: 0
 date: 2020-01-01
-draft: false
+draft: False
+action: False
 ---

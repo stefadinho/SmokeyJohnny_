@@ -1,9 +1,9 @@
 ---
-title: "Fricandeau"
-price: "8.00 per kilo"
+title: "Gepaneerde Kipschnitzels"
+price: "4 voor 4,50 per kilo"
 image: "/img/placeholder.jpg"
 subtitle: ""
-category: "varken"
+category: ""
 weight: ""
 truncated: False
 ordinal: 0

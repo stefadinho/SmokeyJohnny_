@@ -1,11 +1,13 @@
 ---
-title: "3 Gemarineerde Kogelbiefstuk"
+title: "3 Kogelbiefstuk"
 price: "7.99 per 3 stuks"
 image: "/img/placeholder.jpg"
 subtitle: ""
 category: "rund"
-truncated: false
+weight: ""
+truncated: False
 ordinal: 0
 date: 2020-01-01
-draft: false
+draft: False
+action: False
 ---
