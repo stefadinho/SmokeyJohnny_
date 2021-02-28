@@ -1,12 +1,14 @@
 ---
-action: false
-ordinal: 0
-title: "Kip rollade"
+title: "Kip Rollade"
 price: "8.50 per kilo"
 image: "/img/producten/kip-rollade.jpg"
 subtitle: "Heerlijk stuk kip."
 category: "kip"
-truncated: false
+weight: ""
+truncated: False
+ordinal: 0
 date: 2020-01-01
-draft: false
+draft: False
+action: False
+items: 
 ---

@@ -1,13 +1,14 @@
 ---
-title: "Houtskool 10kg"
+title: "Houtskool 10Kg"
 price: "19.90"
 image: "/img/producten/kolen.jpg"
 subtitle: "Dammers Restaurant houtskool is verpakt in een sterke papieren zak."
 category: "overig"
-truncated: false
+weight: ""
+truncated: False
 ordinal: 0
 date: 2020-01-01
-draft: false
+draft: False
+action: False
+items: 
 ---
-
-
