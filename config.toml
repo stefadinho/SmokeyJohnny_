@@ -16,15 +16,15 @@ googleAnalytics = "UA-102304414-2"
 
 [Params]
   subtitle = "Uw Online Slagerij & Barbeque Specialist"
-  logo = "/img/logo.png"
-  favicon = "/img/favicon.ico"
+  logo = "img/logo.png"
+  favicon = "img/favicon.ico"
   dateFormat = "Jan 2, 2006"
   commit = false
   rss = false
   comments = true
 
 [[Params.bigimg]]
-  src = "/img/retina-background-min.jpg"
+  src = "img/retina-background-min.jpg"
 
 [Author]
   name = "John"
