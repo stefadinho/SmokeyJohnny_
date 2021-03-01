@@ -14,7 +14,7 @@ steps:
     submodules: true
 
   - script: |
-      sudo snap install hugo --channel=extended
+      make install-hugo
     displayName: Install hugo extended
 
   - script: |
