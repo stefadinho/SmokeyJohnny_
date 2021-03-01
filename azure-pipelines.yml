@@ -1,0 +1,35 @@
+trigger:
+  - master
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  user: menziess
+  email: stefan_schenk@hotmail.com
+  repo: barbeque
+
+steps:
+  - checkout: self
+    submodules: true
+
+  - script: |
+      sudo snap install hugo --channel=extended
+    displayName: Install hugo extended
+
+  - script: |
+      git submodule add https://github.com/$(user)/$(repo).git public
+      rm -rf public/*
+    displayName: Add submodule to push generated site to
+
+  - script: hugo
+    displayName: Build static site
+
+  - script: |
+      cd public
+      echo Changed directory to $(pwd)
+      git checkout master
+      git add --all
+      git -c user.name=$(user) -c user.email=$(email) commit -m "commit $(date +"%Y_%m_%d_%I_%M_%p")"
+      git push -f https://$(token):x-oauth-basic@github.com/$(user)/$(repo).git master
+    displayName: Push generated site to github.io
