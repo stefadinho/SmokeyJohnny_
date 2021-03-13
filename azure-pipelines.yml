@@ -1,5 +1,8 @@
 trigger:
-  - master
+  branches:
+    include:
+      - master
+      - develop
 
 pool:
   vmImage: ubuntu-latest
@@ -8,28 +11,53 @@ variables:
   user: menziess
   email: stefan_schenk@hotmail.com
   repo: barbeque
+  python.version: "3.8"
 
-steps:
-  - checkout: self
-    submodules: true
+stages:
+  - stage: Vlees Converter
+    jobs:
+      - job: Convert
+        steps:
+          - task: UsePythonVersion@0
+            displayName: "Use Python $(python.version)"
+            inputs:
+              versionSpec: "$(python.version)"
 
-  - script: |
-      make install-hugo
-    displayName: Install hugo extended
+          - script: pip install pipenv && pipenv install -d --system --deploy --ignore-pipfile
+            workingDirectory: tools/vlees-converter
+            displayName: "Install dependencies"
 
-  - script: |
-      git submodule add https://github.com/$(user)/$(repo).git public
-      rm -rf public/*
-    displayName: Add submodule to push generated site to
+          - script: pip install -e .
+            workingDirectory: tools/vlees-converter
+            displayName: "Install vlees-converter"
 
-  - script: hugo
-    displayName: Build static site
+          - script: to-templates
+            displayName: "Convert csv to templates"
 
-  - script: |
-      cd public
-      echo Changed directory to $(pwd)
-      git checkout master
-      git add --all
-      git -c user.name=$(user) -c user.email=$(email) commit -m "commit $(date +"%Y_%m_%d_%I_%M_%p")"
-      git push -f https://$(token):x-oauth-basic@github.com/$(user)/$(repo).git master
-    displayName: Push generated site to github.io
+  - stage: Website
+    jobs:
+      - job: Pubish
+        steps:
+          - checkout: self
+            submodules: true
+
+          - script: |
+              make install-hugo
+            displayName: Install hugo extended
+
+          - script: |
+              git submodule add https://github.com/$(user)/$(repo).git public
+              rm -rf public/*
+            displayName: Add submodule to push generated site to
+
+          - script: hugo
+            displayName: Build static site
+
+          - script: |
+              cd public
+              echo Changed directory to $(pwd)
+              git checkout master
+              git add --all
+              git -c user.name=$(user) -c user.email=$(email) commit -m "commit $(date +"%Y_%m_%d_%I_%M_%p")"
+              git push -f https://$(token):x-oauth-basic@github.com/$(user)/$(repo).git $(Build.SourceBranchName)
+            displayName: Push generated site to github.io
