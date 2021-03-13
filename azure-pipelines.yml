@@ -14,7 +14,7 @@ variables:
   python.version: "3.8"
 
 stages:
-  - stage: Vlees Converter
+  - stage: "Vlees Converter"
     jobs:
       - job: Convert
         steps:
