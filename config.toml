@@ -1,4 +1,4 @@
-baseURL       = "https://menziess.github.io/barbeque/"
+baseURL       = "https://demo-smokeyjohnny.netlify.app/"
 title         = "Smokey Johnny"
 contentdir    = "content"
 layoutdir     = "layouts"

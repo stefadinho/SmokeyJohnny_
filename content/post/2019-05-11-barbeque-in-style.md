@@ -12,11 +12,11 @@ Goed barbequen is een vak apart, dat weet John als geen ander! Neem deel aan de 
 Ook leuk voor personeelsfeesten, weer eens iets anders!
 
 {{< gallery caption-effect="fade" >}}
-  {{< figure link="img/grillmasters-wervershoof-2019/20190721_155236.jpg" >}}
-  {{< figure link="img/grillmasters-wervershoof-2019/20190721_174945.jpg" >}}
-  {{< figure link="img/grillmasters-wervershoof-2019/20190721_175353.jpg" >}}
-  {{< figure link="img/grillmasters-wervershoof-2019/20190721_183725.jpg" >}}
-  {{< figure link="img/grillmasters-wervershoof-2019/20190721_183826.jpg" >}}
-  {{< figure link="img/grillmasters-wervershoof-2019/20190721_155235.jpg" >}}
+  {{< figure link="/img/grillmasters-wervershoof-2019/20190721_155236.jpg" >}}
+  {{< figure link="/img/grillmasters-wervershoof-2019/20190721_174945.jpg" >}}
+  {{< figure link="/img/grillmasters-wervershoof-2019/20190721_175353.jpg" >}}
+  {{< figure link="/img/grillmasters-wervershoof-2019/20190721_183725.jpg" >}}
+  {{< figure link="/img/grillmasters-wervershoof-2019/20190721_183826.jpg" >}}
+  {{< figure link="/img/grillmasters-wervershoof-2019/20190721_155235.jpg" >}}
 {{< /gallery >}}
 {{< load-photoswipe >}}
