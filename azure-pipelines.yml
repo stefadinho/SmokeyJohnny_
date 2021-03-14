@@ -48,7 +48,7 @@ stages:
   - stage: Website
     dependsOn: Converter
     jobs:
-      - job: Convert
+      - job: Install
         steps:
           - task: UsePythonVersion@0
             displayName: "Use Python $(python.version)"
@@ -61,14 +61,17 @@ stages:
           - script: pip install $(Pipeline.Workspace)/vlees_converter.whl/*.whl
             displayName: Install vlees-converter
 
-          - script: to-templates
-            displayName: Convert csv to templates
-
       - job: Publish
         dependsOn: Convert
         steps:
           - checkout: self
+
             submodules: true
+          - script: to-templates
+            displayName: Convert csv to templates
+
+          - script: ls contenct/products
+            displayName: List products
 
           - script: |
               make install-hugo
