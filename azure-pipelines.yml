@@ -51,7 +51,7 @@ stages:
     jobs:
       - job: Publish
         steps:
-          - checkout: self
+          - checkout: $(Build.SourceBranchName)
             submodules: true
 
           - task: UsePythonVersion@0
