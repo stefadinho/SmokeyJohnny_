@@ -51,7 +51,7 @@ stages:
     jobs:
       - job: Publish
         steps:
-          - checkout: $(Build.SourceBranchName)
+          - checkout: self
             submodules: true
 
           - task: UsePythonVersion@0
@@ -76,7 +76,7 @@ stages:
             displayName: Install hugo extended
 
           - script: |
-              git submodule add https://github.com/$(user)/$(repo).git public
+              git submodule add -b $(Build.SourceBranchName) https://github.com/$(user)/$(repo).git public
               rm -rf public/*
             displayName: Add submodule to push generated site to
 
