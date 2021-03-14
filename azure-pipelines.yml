@@ -58,13 +58,14 @@ stages:
           - download: current
             artifact: vlees_converter.whl
 
-          - script: pip install $(Pipeline.Workspace)\vlees_converter.whl\*.whl
+          - script: pip install $(Pipeline.Workspace)/vlees_converter.whl/*.whl
             displayName: Install vlees-converter
 
           - script: to-templates
             displayName: Convert csv to templates
 
-      - job: Pubish
+      - job: Publish
+        dependsOn: Convert
         steps:
           - checkout: self
             submodules: true
