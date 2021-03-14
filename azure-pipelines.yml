@@ -11,6 +11,7 @@ variables:
   user: menziess
   email: stefan_schenk@hotmail.com
   repo: barbeque
+  products_path: content/products
   python.version: "3.8"
 
 stages:
@@ -64,11 +65,11 @@ stages:
           - script: pip install $(Pipeline.Workspace)/vlees_converter.whl/*.whl
             displayName: Install vlees-converter
 
-          - script: to-templates
-            displayName: Convert csv to templates
-
-          - script: ls content/products
-            displayName: List products
+          - script: |
+              rm -rf $(products_path)
+              to-templates
+              ls products_path
+            displayName: Convert csv to products
 
           - script: |
               make install-hugo
