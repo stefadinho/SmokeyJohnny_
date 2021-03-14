@@ -20,18 +20,18 @@ comments: false
 
 {{< products category="pakket" compact="true" >}}
 
-### [Overige](/page/overig)
-
-{{< products category="overig" compact="true" >}}
-
-### [Gegaard](/page/Gegaard)
+### [Gegaard](/page/gegaard)
 
 {{< products category="gegaard" compact="true" >}}
 
-### [Salades](/page/Salades)
+### [Salades](/page/salade)
 
 {{< products category="salade" compact="true" >}}
 
-### [Salades](/page/Saus)
+### [Sauzen](/page/saus)
 
 {{< products category="saus" compact="true" >}}
+
+### [Overige](/page/overig)
+
+{{< products category="overig" compact="true" >}}
