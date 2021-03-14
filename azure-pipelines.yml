@@ -68,7 +68,7 @@ stages:
           - script: |
               rm -rf $(products_path)
               to-templates
-              ls products_path
+              ls $(products_path)
             displayName: Convert csv to products
 
           - script: |
