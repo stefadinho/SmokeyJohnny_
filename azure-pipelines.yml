@@ -16,7 +16,7 @@ variables:
 stages:
   - stage: Converter
     jobs:
-      - job: Convert
+      - job: Build
         steps:
           - task: UsePythonVersion@0
             displayName: "Use Python $(python.version)"
@@ -27,15 +27,43 @@ stages:
             workingDirectory: tools/vlees-converter
             displayName: "Install dependencies"
 
-          - script: pip install -e .
+          - script: make build
             workingDirectory: tools/vlees-converter
-            displayName: "Install vlees-converter"
+            displayName: "Create Wheel"
 
-          - script: to-templates
-            displayName: "Convert csv to templates"
+          - task: CopyFiles@2
+            displayName: Copy dist files
+            inputs:
+              sourceFolder: tools/vlees-converter/dist/
+              contents: vlees_converter*.whl
+              targetFolder: $(Build.ArtifactStagingDirectory)
+              flattenFolders: true
+
+          - task: PublishBuildArtifacts@1
+            displayName: PublishArtifact
+            inputs:
+              pathtoPublish: $(Build.ArtifactStagingDirectory)
+              ArtifactName: vlees_converter.whl
 
   - stage: Website
+    dependsOn: Converter
     jobs:
+      - job: Convert
+        steps:
+          - task: UsePythonVersion@0
+            displayName: "Use Python $(python.version)"
+            inputs:
+              versionSpec: "$(python.version)"
+
+          - download: current
+            artifact: vlees_converter.whl
+
+          - script: pip install $(Pipeline.Workspace)\vlees_converter.whl\*.whl
+            displayName: Install vlees-converter
+
+          - script: to-templates
+            displayName: Convert csv to templates
+
       - job: Pubish
         steps:
           - checkout: self
