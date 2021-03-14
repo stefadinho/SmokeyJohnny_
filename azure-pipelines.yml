@@ -62,7 +62,7 @@ stages:
             displayName: Install vlees-converter
 
       - job: Publish
-        dependsOn: Convert
+        dependsOn: Install
         steps:
           - checkout: self
 
