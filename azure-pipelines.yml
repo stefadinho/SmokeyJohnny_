@@ -85,7 +85,7 @@ stages:
           - script: |
               cd public
               echo Changed directory to $(pwd)
-              git checkout $(Build.SourceBranchName)
+              git checkout -f $(Build.SourceBranchName)
               git add --all
               git -c user.name=$(user) -c user.email=$(email) commit -m "commit $(date +"%Y_%m_%d_%I_%M_%p")"
               git push -f https://$(token):x-oauth-basic@github.com/$(user)/$(repo).git $(Build.SourceBranchName)
