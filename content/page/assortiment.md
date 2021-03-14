@@ -28,6 +28,10 @@ comments: false
 
 {{< products category="gegaard" compact="true" >}}
 
-<!-- ### [Salades](/page/Salades)
+### [Salades](/page/Salades)
 
-{{< products category="salade" compact="true" >}} -->
+{{< products category="salade" compact="true" >}}
+
+### [Salades](/page/Saus)
+
+{{< products category="saus" compact="true" >}}
