@@ -67,7 +67,7 @@ stages:
           - script: to-templates
             displayName: Convert csv to templates
 
-          - script: ls contenct/products
+          - script: ls content/products
             displayName: List products
 
           - script: |
