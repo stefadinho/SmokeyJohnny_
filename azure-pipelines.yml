@@ -66,12 +66,18 @@ stages:
             displayName: Install vlees-converter
 
           - script: |
+              contents="$(jq '.installed.client_secret = env.CLIENT_SECRET' credentials.json)" && \
+              echo "${contents}" > credentials.json
+            displayName: Set google client secret
+            env:
+              CLIENT_SECRET: $(client_secret)
+
+          - script: |
               rm -rf $(products_path)
+              download_csv
               to-templates
               ls $(products_path)
             displayName: Convert csv to products
-            env:
-              CLIENT_SECRET: $(client_secret)
 
           - script: |
               make install-hugo

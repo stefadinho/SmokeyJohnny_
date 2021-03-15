@@ -39,7 +39,8 @@ if __name__ == '__main__':
         entry_points={
             'console_scripts': [
                 "to-templates=vlees_converter.main:to_templates",
-                "to-sheet=vlees_converter.main:to_sheet"
+                "to-sheet=vlees_converter.main:to_sheet",
+                "download_csv=vlees_converter.main:download_csv"
             ]
         },
     )

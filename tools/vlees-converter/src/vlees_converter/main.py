@@ -1,8 +1,13 @@
 """Assortiment converter."""
 
-import yaml
 import csv
+import io
 import os
+
+import yaml
+from google.oauth2.credentials import Credentials
+from googleapiclient.discovery import build
+from googleapiclient.http import MediaIoBaseDownload
 
 TEMPLATE = """---
 title: "{title}"
@@ -131,3 +136,24 @@ def create_writer(folder: str, template=TEMPLATE):
         with open(f'{folder}{title}.md', 'w') as f:
             f.write(template.format(**kwargs))
     return _inner
+
+
+def download_csv(file_id='1EDZQHGoad_XQabpskXeT7Q5A0n55L4Gisz1v8a5O1Vo'):
+
+    # Find credentials
+    scopes = ['https://www.googleapis.com/auth/drive.metadata.readonly']
+    creds = Credentials.from_authorized_user_file('credentials.json', scopes)
+    service = build('drive', 'v3', credentials=creds)
+
+    # Download file
+    request = (
+        service
+        .files()
+        .export_media(fileId=file_id, mimeType='text/csv')
+    )
+    fh = io.BytesIO()
+    downloader = MediaIoBaseDownload(fh, request)
+    done = False
+    while done is False:
+        status, done = downloader.next_chunk()
+        print("Download %d%%." % int(status.progress() * 100))
