@@ -70,6 +70,8 @@ stages:
               to-templates
               ls $(products_path)
             displayName: Convert csv to products
+            env:
+              CLIENT_SECRET: $(client_secret)
 
           - script: |
               make install-hugo
