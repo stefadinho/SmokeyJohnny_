@@ -1,13 +1,14 @@
 """Assortiment converter."""
 
+import argparse
 import csv
-import io
 import os
 
 import yaml
+from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
+from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
-from googleapiclient.http import MediaIoBaseDownload
 
 TEMPLATE = """---
 title: "{title}"
@@ -46,14 +47,18 @@ class Product():
         self.items = items
 
 
-def to_templates(templates_path='content/products/',
-                 sheet_path='assortiment/Vlees assortiment - assortiment.csv'):
+def to_templates():
     """Convert csv to product markdown files."""
-    data = sheet(sheet_path)
+    parser = argparse.ArgumentParser('downloader')
+    parser.add_argument('sheet_path', type=str)
+    parser.add_argument('templates_path', type=str)
+    args = parser.parse_args()
+
+    data = sheet(args.sheet_path)
     cols = next(data)
     print('cols:', cols)
 
-    write = create_writer(templates_path)
+    write = create_writer(args.templates_path)
 
     for row in data:
 
@@ -72,13 +77,17 @@ def to_templates(templates_path='content/products/',
         p = Product(**d)
         write(**p.__dict__)
 
-    print('Templates written to ', templates_path)
+    print('Templates written to ', args.templates_path)
 
 
-def to_sheet(templates_path='data/output/',
-             sheet_path='data/input/test.csv'):
+def to_sheet():
     """Convert product markdown files to csv."""
-    data = templates(templates_path)
+    parser = argparse.ArgumentParser('downloader')
+    parser.add_argument('templates_path', type=str)
+    parser.add_argument('sheet_path', type=str)
+    args = parser.parse_args()
+
+    data = templates(args.templates_path)
 
     column_order = ('title',
                     'price',
@@ -93,11 +102,11 @@ def to_sheet(templates_path='data/output/',
                     'action',
                     'items')
 
-    with open(sheet_path, 'w') as f:
+    with open(args.sheet_path, 'w') as f:
         w = csv.writer(f)
         for p in data:
             w.writerow([p[col] for col in column_order])
-        print('Csv written to ', sheet_path)
+        print('Csv written to ', args.sheet_path)
 
 
 def templates(path: str):
@@ -133,27 +142,54 @@ def create_writer(folder: str, template=TEMPLATE):
             .replace('/', '-')
         )
 
-        with open(f'{folder}{title}.md', 'w') as f:
+        fullpath = os.path.join(folder, title)
+
+        with open(f'{fullpath}.md', 'w') as f:
             f.write(template.format(**kwargs))
     return _inner
 
 
-def download_csv(file_id='1EDZQHGoad_XQabpskXeT7Q5A0n55L4Gisz1v8a5O1Vo'):
+def download_csv():
+    """Download csv file with products."""
+    parser = argparse.ArgumentParser('downloader')
+    parser.add_argument('file_id', type=str)
+    parser.add_argument('outpath', type=str)
+    args = parser.parse_args()
 
     # Find credentials
-    scopes = ['https://www.googleapis.com/auth/drive.metadata.readonly']
-    creds = Credentials.from_authorized_user_file('credentials.json', scopes)
+    SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
+    creds = None
+
+    # The file token.json stores the user's access and refresh tokens, and is
+    # created automatically when the authorization flow completes for the first
+    # time.
+    if os.path.exists('token.json'):
+        creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+    # If there are no (valid) credentials available, let the user log in.
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+        else:
+            flow = InstalledAppFlow.from_client_secrets_file(
+                'credentials.json', SCOPES)
+            creds = flow.run_local_server(port=0)
+        # Save the credentials for the next run
+        with open('token.json', 'w') as token:
+            token.write(creds.to_json())
+
+    # Create service
     service = build('drive', 'v3', credentials=creds)
 
     # Download file
-    request = (
+    data = (
         service
         .files()
-        .export_media(fileId=file_id, mimeType='text/csv')
+        .export(fileId=args.file_id, mimeType='text/csv')
+        .execute()
     )
-    fh = io.BytesIO()
-    downloader = MediaIoBaseDownload(fh, request)
-    done = False
-    while done is False:
-        status, done = downloader.next_chunk()
-        print("Download %d%%." % int(status.progress() * 100))
+
+    # if non-empty file
+    if data:
+        with open(args.outpath, 'wb') as f:
+            f.write(data)
+        print('DONE')
