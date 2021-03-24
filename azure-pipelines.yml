@@ -59,22 +59,22 @@ stages:
             inputs:
               versionSpec: "$(python.version)"
 
-          - download: current
-            artifact: vlees_converter.whl
+          # - download: current
+          #   artifact: vlees_converter.whl
 
-          - script: pip install $(Pipeline.Workspace)/vlees_converter.whl/*.whl
-            displayName: Install vlees-converter
+          # - script: pip install $(Pipeline.Workspace)/vlees_converter.whl/*.whl
+          #   displayName: Install vlees-converter
 
-          - script: |
-              contents="$(jq '.installed.client_secret = env.CLIENT_SECRET' credentials.json)" && \
-              echo "${contents}" > credentials.json
-            displayName: Set google client secret
-            env:
-              CLIENT_SECRET: $(client_secret)
+          # - script: |
+          #     contents="$(jq '.installed.client_secret = env.CLIENT_SECRET' credentials.json)" && \
+          #     echo "${contents}" > credentials.json
+          #   displayName: Set google client secret
+          #   env:
+          #     CLIENT_SECRET: $(client_secret)
 
+          # download_csv 1EDZQHGoad_XQabpskXeT7Q5A0n55L4Gisz1v8a5O1Vo assortiment/data.csv
           - script: |
               rm -rf $(products_path)
-              download_csv 1EDZQHGoad_XQabpskXeT7Q5A0n55L4Gisz1v8a5O1Vo assortiment/data.csv
               to-templates assortiment/data.csv $(products_path)
               ls $(products_path)
             displayName: Convert csv to products
