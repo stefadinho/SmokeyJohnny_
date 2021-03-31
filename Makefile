@@ -5,7 +5,9 @@ LOCALIP := $(shell hostname -I | awk '{print $$1}')
 run:
 	@echo Required Hugo Version: $(HUGO_VERSION)
 	@echo Running Hugo Version: $$(hugo version)
-	hugo server -FD
+	rm -rf content/products
+	to-templates assortiment/data.csv content/products
+	hugo server
 
 serve-subnet:
 	@echo Using local ip on network to host: $(LOCALIP)
