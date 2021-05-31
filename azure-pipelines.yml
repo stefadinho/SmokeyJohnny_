@@ -74,7 +74,7 @@ stages:
 
           - script: |
               rm -rf $(products_path)
-              download_csv 1EDZQHGoad_XQabpskXeT7Q5A0n55L4Gisz1v8a5O1Vo assortiment/data.csv
+              # download_csv 1EDZQHGoad_XQabpskXeT7Q5A0n55L4Gisz1v8a5O1Vo assortiment/data.csv
               to-templates assortiment/data.csv $(products_path)
               ls $(products_path)
             displayName: Convert csv to products

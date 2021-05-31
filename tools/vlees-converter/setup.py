@@ -24,7 +24,7 @@ def read_readme(fname):
 
 if __name__ == '__main__':
     setup(
-        name='vlees_converter',
+        name='vlees-converter',
         version=getenv('PACKAGE_VERSION', '0.0.dev0'),
         author='Stefan Schenk',
         author_email='stefan_schenk@hotmail.com',
