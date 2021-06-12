@@ -15,36 +15,36 @@ variables:
   python.version: "3.8"
 
 stages:
-  # - stage: Converter
-  #   jobs:
-  #     - job: Build
-  #       steps:
-  #         - task: UsePythonVersion@0
-  #           displayName: "Use Python $(python.version)"
-  #           inputs:
-  #             versionSpec: "$(python.version)"
+  - stage: Converter
+    jobs:
+      - job: Build
+        steps:
+          - task: UsePythonVersion@0
+            displayName: "Use Python $(python.version)"
+            inputs:
+              versionSpec: "$(python.version)"
 
-  #         - script: pip install pipenv && pipenv install -d --system --deploy --ignore-pipfile
-  #           workingDirectory: tools/vlees-converter
-  #           displayName: "Install dependencies"
+          - script: pip install pipenv && pipenv install -d --system --deploy --ignore-pipfile
+            workingDirectory: tools/vlees-converter
+            displayName: "Install dependencies"
 
-  #         - script: make build
-  #           workingDirectory: tools/vlees-converter
-  #           displayName: "Create Wheel"
+          - script: make build
+            workingDirectory: tools/vlees-converter
+            displayName: "Create Wheel"
 
-  #         - task: CopyFiles@2
-  #           displayName: Copy dist files
-  #           inputs:
-  #             sourceFolder: tools/vlees-converter/dist/
-  #             contents: vlees_converter*.whl
-  #             targetFolder: $(Build.ArtifactStagingDirectory)
-  #             flattenFolders: true
+          - task: CopyFiles@2
+            displayName: Copy dist files
+            inputs:
+              sourceFolder: tools/vlees-converter/dist/
+              contents: vlees_converter*.whl
+              targetFolder: $(Build.ArtifactStagingDirectory)
+              flattenFolders: true
 
-  #         - task: PublishBuildArtifacts@1
-  #           displayName: PublishArtifact
-  #           inputs:
-  #             pathtoPublish: $(Build.ArtifactStagingDirectory)
-  #             ArtifactName: vlees_converter.whl
+          - task: PublishBuildArtifacts@1
+            displayName: PublishArtifact
+            inputs:
+              pathtoPublish: $(Build.ArtifactStagingDirectory)
+              ArtifactName: vlees_converter.whl
 
   - stage: Website
     dependsOn: Converter
@@ -54,23 +54,23 @@ stages:
           - checkout: self
             submodules: true
 
-          # - task: UsePythonVersion@0
-          #   displayName: "Use Python $(python.version)"
-          #   inputs:
-          #     versionSpec: "$(python.version)"
+          - task: UsePythonVersion@0
+            displayName: "Use Python $(python.version)"
+            inputs:
+              versionSpec: "$(python.version)"
 
-          # - download: current
-          #   artifact: vlees_converter.whl
+          - download: current
+            artifact: vlees_converter.whl
 
-          # - script: pip install $(Pipeline.Workspace)/vlees_converter.whl/*.whl
-          #   displayName: Install vlees-converter
+          - script: pip install $(Pipeline.Workspace)/vlees_converter.whl/*.whl
+            displayName: Install vlees-converter
 
-          # - script: |
-          #     contents="$(jq '.installed.client_secret = env.CLIENT_SECRET' credentials.json)" && \
-          #     echo "${contents}" > credentials.json
-          #   displayName: Set google client secret
-          #   env:
-          #     CLIENT_SECRET: $(client_secret)
+          - script: |
+              contents="$(jq '.installed.client_secret = env.CLIENT_SECRET' credentials.json)" && \
+              echo "${contents}" > credentials.json
+            displayName: Set google client secret
+            env:
+              CLIENT_SECRET: $(client_secret)
 
           - script: |
               rm -rf $(products_path)
