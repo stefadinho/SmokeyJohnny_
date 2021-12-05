@@ -16,7 +16,7 @@ Gezellig met vrienden en familie eten en genieten van een heerlijk drankje en de
 
 {{< products category="rund" limit="3" >}}
 
-### [Rundvlees](page/black-angus)
+### [Black Angus](page/black-angus)
 
 Het lekkerste Black Angus vlees.
 
