@@ -16,7 +16,7 @@ serve-subnet:
 install-hugo:
 	# https://api.github.com/repos/gohugoio/hugo/releases
 	rm -f hugo*_Linux-64bit.deb
-	curl -s url -s https://api.github.com/repos/gohugoio/hugo/releases?per_page=1000 \
+	curl -s url -s https://api.github.com/repos/gohugoio/hugo/releases?per_page=10000 \
 	| jq '.[] | select(.name=="v$(HUGO_VERSION)") | .assets' \
 	| jq '.[] | select(.name=="hugo_extended_$(HUGO_VERSION)_Linux-64bit.deb")' \
 	| jq '.url' \

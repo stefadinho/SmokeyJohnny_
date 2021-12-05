@@ -16,6 +16,12 @@ Gezellig met vrienden en familie eten en genieten van een heerlijk drankje en de
 
 {{< products category="rund" limit="3" >}}
 
+### [Rundvlees](page/black-angus)
+
+Het lekkerste Black Angus vlees.
+
+{{< products category="black-angus" limit="3" >}}
+
 ### [Varkensvlees](page/varken)
 
 Een sappige wok, of geurige barbeque. Dat je met varkensvlees alle kanten op kan, ontdek je in een van onze barbeque workshops.

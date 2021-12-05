@@ -8,6 +8,10 @@ comments: false
 
 {{< products category="rund" compact="true" >}}
 
+### [Black Angus](/page/black-angus)
+
+{{< products category="black-angus" compact="true" >}}
+
 ### [Varkensvlees](/page/varken)
 
 {{< products category="varken" compact="true" >}}
