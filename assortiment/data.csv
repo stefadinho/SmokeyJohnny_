@@ -58,7 +58,7 @@ Ossenhaaspuntjes,"25,00 per kilo",rund,,/img/placeholder.jpg,,2020-01-01,TRUE,0,
 Tapasschotel,"21,99 per schaal",pakket,,/img/pakket/tapas.jpg,Een combinatie van luxeuze hapjes in één pakket.,2020-01-01,TRUE,2,FALSE,FALSE,
 Borrel pakket,"21,99 per schaal",pakket,,/img/pakket/borrel.jpg,Lekker veel hapjes voor bij een borrel.,2020-01-01,TRUE,1,FALSE,FALSE,
 BBQ Pakket populair,"6,50 per persoon",pakket,,/img/pakket/populair.png,"Alleen te bestellen voor vier personen: een lekkere mix met Kip spies, Runder Hamburger, Gemarineerd filetlapje, en Kip op stok.",2020-01-01,TRUE,4,FALSE,FALSE,"[""4x Kip spies"", ""4x Runder hamburger"", ""4x Filetlapje heerlijk gemarineerd"", ""4x Kip op stok""]"
-Gourmet schotel,"7,75 per persoon",pakket,,/img/pakket/gourmetschotel.jpg,Lekker een gezellig avondje goumetten met vrienden of familie.,2020-01-01,TRUE,0,FALSE,FALSE,"[""Kogelbiefstuk"", ""Kipfilet"", ""Gemarineerde Kipfilet"", ""Varkenshaas"", ""Hamburger"", ""Kipshoarma"", ""Gemarineerde kogelbiefstuk""]"
+Gourmet schotel,"7,99 per persoon",pakket,,/img/pakket/gourmetschotel.jpg,Lekker een gezellig avondje goumetten met vrienden of familie.,2020-01-01,TRUE,0,FALSE,FALSE,"[""Kogelbiefstuk"", ""Kipfilet"", ""Gemarineerde Kipfilet"", ""Varkenshaas"", ""Hamburger"", ""Kipshoarma"", ""Gemarineerde kogelbiefstuk""]"
 BBQ Pakket deluxe,"8,50 per persoon",pakket,,/img/pakket/deluxe.png,"Alleen te bestellen voor vier personen: de beste Ossenhaas spies, Varkenshaas spies, Kip saté spies, en Kip op stok!",2020-01-01,TRUE,3,FALSE,FALSE,"[""4x Ossenhaas spies"", ""4x Varkenshaas spies"", ""4x Kip saté spies"", ""4x Kip op stok""]"
 Smokey Johnny pakket,"23,50",pakket,,/img/placeholder.jpg,,2020-01-01,FALSE,0,FALSE,FALSE,"[""3 kogelbiefstuk"", ""500 gram runder gehakt"", ""hamburgers"", ""4 kipschnitzels"", ""400 gram kipblokjes"", ""stukje grillworst""]"
 Basic Rub,"5,99",overig,,/img/producten/sauzen1.jpg,All Purpose.,2020-01-01,TRUE,3,FALSE,FALSE,
@@ -78,8 +78,8 @@ Smeer het er up!,"5,99",overig,,/img/producten/sauzen2.jpg,"Toppertje op brood, 
 Kipfilet,"10,50 per kilo",kip,,/img/producten/kipfilet.jpg,"Conventionele kip, gehouden in een stal omgeving met verrijkte dierenwelzijnsaspecten. Malse naturel kipfilet om eindeloos mee te variëren. Lekker met wat kruiden en marinade en makkelijk te snijden in blokjes, reepjes, plakjes etc.",2020-01-01,TRUE,0,FALSE,FALSE,
 Gepaneerde Kipschnitzels,"4,50 per 4 stuks",kip,,/img/placeholder.jpg,,2020-01-01,FALSE,0,FALSE,FALSE,
 Kip rollade,"10,90 per kilo",kip,,/img/producten/kip-rollade.jpg,Heerlijk stuk kip.,2020-01-01,TRUE,0,FALSE,FALSE,
-Kippendijen filet gemarineerd,"9,25 per kilo",kip,,/img/producten/kipdijenfilet.jpg,Deze kipdijfilets zijn van puur kippendijvlees waarvan het bot is verwijderd. Lekker gemarineerd.,2020-01-01,TRUE,0,FALSE,FALSE,
-Kippendijen filet ongemarineerd,"9,25 per kilo",kip,,/img/producten/kipdijenfilet.jpg,Deze kipdijfilets zijn van puur kippendijvlees waarvan het bot is verwijderd. Ze zijn ook erg lekker voor op de barbecue.,2020-01-01,TRUE,0,FALSE,FALSE,
+Kippendijen filet gemarineerd,"9,50 per kilo",kip,,/img/producten/kipdijenfilet.jpg,Deze kipdijfilets zijn van puur kippendijvlees waarvan het bot is verwijderd. Lekker gemarineerd.,2020-01-01,TRUE,0,FALSE,FALSE,
+Kippendijen filet ongemarineerd,"9,50 per kilo",kip,,/img/producten/kipdijenfilet.jpg,Deze kipdijfilets zijn van puur kippendijvlees waarvan het bot is verwijderd. Ze zijn ook erg lekker voor op de barbecue.,2020-01-01,TRUE,0,FALSE,FALSE,
 Kipshoarma,"9,75 per kilo",kip,,/img/producten/shoarma.jpg,"Mocht je lekker shoarma willen eten maar wel gezond willen doen, dan is deze kipshoarma een goed alternatief.",2020-01-01,TRUE,0,FALSE,FALSE,
 Kip Op Stok,"6,99 per 4 stuks",kip,,/img/placeholder.jpg,,2020-01-01,FALSE,0,FALSE,FALSE,
 4 Kant-En-Klare Gehaktbal,"6,40 per pakje",gegaard,,/img/placeholder.jpg,,2020-01-01,TRUE,0,FALSE,FALSE,
