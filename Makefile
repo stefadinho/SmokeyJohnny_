@@ -1,5 +1,5 @@
-
 HUGO_VERSION=0.72.0
+HUGO_PLATFORM=Linux-64bit.deb
 LOCALIP := $(shell hostname -I | awk '{print $$1}')
 
 run:
@@ -14,18 +14,18 @@ serve-subnet:
 	@hugo server -DF -b http://$(LOCALIP) --bind $(LOCALIP)
 
 install-hugo:
-	# https://api.github.com/repos/gohugoio/hugo/releases
-	rm -f hugo*_Linux-64bit.deb
-	curl -s url -s https://api.github.com/repos/gohugoio/hugo/releases?per_page=10000 \
-	| jq '.[] | select(.name=="v$(HUGO_VERSION)") | .assets' \
-	| jq '.[] | select(.name=="hugo_extended_$(HUGO_VERSION)_Linux-64bit.deb")' \
+	# https://api.github.com/repos/gohugoio/hugo/releases/
+	rm -f hugo*_$(HUGO_PLATFORM)
+	curl -s url -s https://api.github.com/repos/gohugoio/hugo/releases/tags/v$(HUGO_VERSION) \
+	| jq '.assets' \
+	| jq '.[] | select(.name=="hugo_extended_$(HUGO_VERSION)_$(HUGO_PLATFORM)")' \
 	| jq '.url' \
 	| xargs curl -s \
 	| grep  browser_download_url \
-	| grep Linux-64bit.deb \
+	| grep $(HUGO_PLATFORM) \
 	| grep extended \
 	| cut -d '"' -f 4 \
 	| wget -i -
-	sudo dpkg -i hugo*_Linux-64bit.deb
-	rm hugo*_Linux-64bit.deb
+	sudo dpkg -i hugo*_$(HUGO_PLATFORM)
+	rm hugo*_$(HUGO_PLATFORM)
 	hugo version
