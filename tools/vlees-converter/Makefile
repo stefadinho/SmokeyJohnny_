@@ -27,8 +27,8 @@ test: dev
 	bandit -r src -f xml -o junit/security.xml || true
 
 build: clean
-	pip install wheel
-	python setup.py bdist_wheel
+	pip install build
+	python -m build
 
 clean:
 	@rm -rf .pytest_cache/ .mypy_cache/ junit/ build/ dist/
