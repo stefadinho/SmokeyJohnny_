@@ -15,39 +15,39 @@ variables:
   python.version: "3.8"
 
 stages:
-  - stage: Converter
-    jobs:
-      - job: Build
-        steps:
-          - task: UsePythonVersion@0
-            displayName: "Use Python $(python.version)"
-            inputs:
-              versionSpec: "$(python.version)"
+  # - stage: Converter
+  #   jobs:
+  #     - job: Build
+  #       steps:
+  #         - task: UsePythonVersion@0
+  #           displayName: "Use Python $(python.version)"
+  #           inputs:
+  #             versionSpec: "$(python.version)"
 
-          - script: pip install pipenv && pipenv install -d --system --deploy --ignore-pipfile
-            workingDirectory: tools/vlees-converter
-            displayName: "Install dependencies"
+  #         - script: pip install pipenv && pipenv install -d --system --deploy --ignore-pipfile
+  #           workingDirectory: tools/vlees-converter
+  #           displayName: "Install dependencies"
 
-          - script: make build
-            workingDirectory: tools/vlees-converter
-            displayName: "Create Wheel"
+  #         - script: make build
+  #           workingDirectory: tools/vlees-converter
+  #           displayName: "Create Wheel"
 
-          - task: CopyFiles@2
-            displayName: Copy dist files
-            inputs:
-              sourceFolder: tools/vlees-converter/dist/
-              contents: vlees_converter*.whl
-              targetFolder: $(Build.ArtifactStagingDirectory)
-              flattenFolders: true
+  #         - task: CopyFiles@2
+  #           displayName: Copy dist files
+  #           inputs:
+  #             sourceFolder: tools/vlees-converter/dist/
+  #             contents: vlees_converter*.whl
+  #             targetFolder: $(Build.ArtifactStagingDirectory)
+  #             flattenFolders: true
 
-          - task: PublishBuildArtifacts@1
-            displayName: PublishArtifact
-            inputs:
-              pathtoPublish: $(Build.ArtifactStagingDirectory)
-              ArtifactName: vlees_converter.whl
+  #         - task: PublishBuildArtifacts@1
+  #           displayName: PublishArtifact
+  #           inputs:
+  #             pathtoPublish: $(Build.ArtifactStagingDirectory)
+  #             ArtifactName: vlees_converter.whl
 
   - stage: Website
-    dependsOn: Converter
+    # dependsOn: Converter
     jobs:
       - job: Publish
         steps:
