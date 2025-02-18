@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: CI
 
 on:
   push:
@@ -9,83 +9,103 @@ on:
 jobs:
   converter:
     runs-on: ubuntu-latest
+    env:
+      python_version: "3.8"
+      user: menziess
+      email: stefan_schenk@hotmail.com
+      repo: barbeque
+      products_path: content/products
     steps:
-      - name: Checkout Repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.8"
+          python-version: ${{ env.python_version }}
 
       - name: Install dependencies
-        run: pip install pipenv && pipenv install -d --system --deploy --ignore-pipfile
         working-directory: tools/vlees-converter
+        run: |
+          pip install pipenv
+          pipenv install -d --system --deploy --ignore-pipfile
 
       - name: Create Wheel
-        run: make build
         working-directory: tools/vlees-converter
+        run: make build
 
-      - name: Upload Build Artifact
+      - name: Upload wheel artifact
         uses: actions/upload-artifact@v3
         with:
-          name: vlees_converter
+          name: vlees_converter.whl
           path: tools/vlees-converter/dist/vlees_converter*.whl
 
   website:
     needs: converter
     runs-on: ubuntu-latest
+    env:
+      python_version: "3.8"
+      user: menziess
+      email: stefan_schenk@hotmail.com
+      repo: barbeque
+      products_path: content/products
     steps:
-      - name: Checkout Repository
+      - name: Checkout code (with submodules)
         uses: actions/checkout@v3
         with:
           submodules: true
 
       - name: Set up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.8"
+          python-version: ${{ env.python_version }}
 
-      - name: Download Built Artifact
+      - name: Download wheel artifact
         uses: actions/download-artifact@v3
         with:
-          name: vlees_converter
+          name: vlees_converter.whl
+          path: ./vlees_converter.whl
 
-      - name: Install vlees-converter
-        run: pip install vlees_converter.whl/*.whl
+      - name: Install vlees_converter
+        run: pip install ./vlees_converter.whl/*.whl
 
-      - name: Set Google Client Secret
-        run: |
-          contents="$(jq '.installed.client_secret = env.CLIENT_SECRET' credentials.json)" && \
-          echo "${contents}" > credentials.json
+      - name: Set Google client secret in credentials.json
         env:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-
-      - name: Convert CSV to Products
         run: |
-          rm -rf content/products
-          to-templates assortiment/data.csv content/products
-          ls content/products
+          contents="$(jq '.installed.client_secret = env.CLIENT_SECRET' credentials.json)"
+          echo "${contents}" > credentials.json
 
-      - name: Install Hugo
+      - name: Convert CSV to products
+        run: |
+          rm -rf ${{ env.products_path }}
+          # Uncomment the following line if you need to download CSV:
+          # download_csv 1EDZQHGoad_XQabpskXeT7Q5A0n55L4Gisz1v8a5O1Vo assortiment/data.csv
+          to-templates assortiment/data.csv ${{ env.products_path }}
+          ls ${{ env.products_path }}
+
+      - name: Install Hugo extended
         run: make install-hugo
 
-      - name: Add Submodule and Clean Public Directory
+      - name: Add submodule for generated site
         run: |
-          git submodule add https://github.com/${{ secrets.USER }}/barbeque.git public
+          # Add the submodule; if it already exists, ignore the error
+          git submodule add https://github.com/${{ env.user }}/${{ env.repo }}.git public || true
           rm -rf public/*
 
-      - name: Build Static Site
+      - name: Build static site
         run: hugo
 
-      - name: Push Generated Site to GitHub
+      - name: Push generated site to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd public
-          git checkout $(git rev-parse --abbrev-ref HEAD) 2>/dev/null || git checkout -b $(git rev-parse --abbrev-ref HEAD)
+          echo "Changed directory to $(pwd)"
+          # Use the branch name from the triggering ref
+          branch=${GITHUB_REF#refs/heads/}
+          git checkout $branch 2>/dev/null || git checkout -b $branch
           git add --all
-          git -c user.name=${{ secrets.USER }} -c user.email=${{ secrets.EMAIL }} commit -m "commit $(date +"%Y_%m_%d_%I_%M_%p")"
-          git push -f https://${{ secrets.TOKEN }}:x-oauth-basic@github.com/${{ secrets.USER }}/barbeque.git $(git rev-parse --abbrev-ref HEAD)
-        env:
-          USER: ${{ secrets.USER }}
-          EMAIL: ${{ secrets.EMAIL }}
-          TOKEN: ${{ secrets.GH_PAT }}
+          # Commit only if there are changes; ignore error if there is nothing to commit.
+          git -c user.name="${{ env.user }}" -c user.email="${{ env.email }}" commit -m "commit $(date +"%Y_%m_%d_%I_%M_%p")" || echo "No changes to commit"
+          git push -f https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${{ env.user }}/${{ env.repo }}.git $branch
