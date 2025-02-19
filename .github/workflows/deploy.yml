@@ -35,7 +35,7 @@ jobs:
         run: make build
 
       - name: Upload wheel artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: vlees_converter.whl
           path: tools/vlees-converter/dist/vlees_converter*.whl
