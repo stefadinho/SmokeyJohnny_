@@ -1,0 +1,111 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+
+jobs:
+  converter:
+    runs-on: ubuntu-latest
+    env:
+      python_version: "3.8"
+      user: menziess
+      email: stefan_schenk@hotmail.com
+      repo: barbeque
+      products_path: content/products
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.python_version }}
+
+      - name: Install dependencies
+        working-directory: tools/vlees-converter
+        run: |
+          pip install pipenv
+          pipenv install -d --system --deploy --ignore-pipfile
+
+      - name: Create Wheel
+        working-directory: tools/vlees-converter
+        run: make build
+
+      - name: Upload wheel artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: vlees_converter.whl
+          path: tools/vlees-converter/dist/vlees_converter*.whl
+
+  website:
+    needs: converter
+    runs-on: ubuntu-latest
+    env:
+      python_version: "3.8"
+      user: menziess
+      email: stefan_schenk@hotmail.com
+      repo: barbeque
+      products_path: content/products
+    steps:
+      - name: Checkout code (with submodules)
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.python_version }}
+
+      - name: Download wheel artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: vlees_converter.whl
+          path: ./vlees_converter.whl
+
+      - name: Install vlees_converter
+        run: pip install ./vlees_converter.whl/*.whl
+
+      - name: Set Google client secret in credentials.json
+        env:
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          contents="$(jq '.installed.client_secret = env.CLIENT_SECRET' credentials.json)"
+          echo "${contents}" > credentials.json
+
+      - name: Convert CSV to products
+        run: |
+          rm -rf ${{ env.products_path }}
+          # Uncomment the following line if you need to download CSV:
+          # download_csv 1EDZQHGoad_XQabpskXeT7Q5A0n55L4Gisz1v8a5O1Vo assortiment/data.csv
+          to-templates assortiment/data.csv ${{ env.products_path }}
+          ls ${{ env.products_path }}
+
+      - name: Install Hugo extended
+        run: make install-hugo
+
+      - name: Add submodule for generated site
+        run: |
+          # Add the submodule; if it already exists, ignore the error
+          git submodule add https://github.com/${{ env.user }}/${{ env.repo }}.git public || true
+          rm -rf public/*
+
+      - name: Build static site
+        run: hugo
+
+      - name: Push generated site to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd public
+          echo "Changed directory to $(pwd)"
+          # Use the branch name from the triggering ref
+          branch=${GITHUB_REF#refs/heads/}
+          git checkout $branch 2>/dev/null || git checkout -b $branch
+          git add --all
+          # Commit only if there are changes; ignore error if there is nothing to commit.
+          git -c user.name="${{ env.user }}" -c user.email="${{ env.email }}" commit -m "commit $(date +"%Y_%m_%d_%I_%M_%p")" || echo "No changes to commit"
+          git push -f https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${{ env.user }}/${{ env.repo }}.git $branch
