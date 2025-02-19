@@ -14,7 +14,7 @@ jobs:
       python_version: "3.8"
       user: stefadinho
       email: stefano_2000@live.nl
-      repo: sjbbq
+      repo: smokeysite
       products_path: content/products
     steps:
       - name: Checkout code
@@ -48,7 +48,7 @@ jobs:
       python_version: "3.8"
       user: stefadinho
       email: stefano_2000@live.nl
-      repo: sjbbq
+      repo: smokeysite
       products_path: content/products
     steps:
       - name: Checkout code (with submodules)
