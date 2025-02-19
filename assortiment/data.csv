@@ -1,4 +1,4 @@
-title;price;type;weight;image;subtitle;date;live;ordinal;truncated;action;items
+ï»¿title;price;type;weight;image;subtitle;date;live;ordinal;truncated;action;items
 3 Gemarineerde Kogelbiefstuk;9,90 per 3 stuks;rund;;/img/producten/kogelbiefstuk.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 3 Kogelbiefstuk;9,90 per 3 stuks;rund;;/img/producten/kogelbiefstuk.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 3 Oneminutesteaks;10,50 per 3 stuks;rund;;/img/placeholder.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
@@ -10,7 +10,7 @@ Aflaksaus;5,99;overig;;/img/producten/sauzen2.jpg;Een perfecte sauce voor Sparer
 African Rub;5,99;overig;;/img/producten/sauzen1.jpg;All Purpose.;1-1-2020;ONWAAR;3;ONWAAR;ONWAAR;
 Basic Rub;5,99;overig;;/img/producten/sauzen1.jpg;All Purpose.;1-1-2020;ONWAAR;3;ONWAAR;ONWAAR;
 Bavette;29,99 per kilo;rund;;/img/producten/bavette.jpg;De beef bavette is gesneden van de vang van het rund, dit wordt ook wel werkvlees genoemd en dat heeft de naam erg mals te zijn. Het vlees is grover van structuur maar zeer mals en krachtig van smaak.;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
-BBQ Pakket deluxe;8,50 per persoon;pakket;;/img/pakket/deluxe.png;Alleen te bestellen voor vier personen: de beste Ossenhaas spies, Varkenshaas spies, Kip saté spies, en Kip op stok!;1-1-2020;WAAR;3;ONWAAR;ONWAAR;"[""4x Ossenhaas spies"", ""4x Varkenshaas spies"", ""4x Kip saté spies"", ""4x Kip op stok""]"
+BBQ Pakket deluxe;8,50 per persoon;pakket;;/img/pakket/deluxe.png;Alleen te bestellen voor vier personen: de beste Ossenhaas spies, Varkenshaas spies, Kip satÃ© spies, en Kip op stok!;1-1-2020;WAAR;3;ONWAAR;ONWAAR;"[""4x Ossenhaas spies"", ""4x Varkenshaas spies"", ""4x Kip satÃ© spies"", ""4x Kip op stok""]"
 BBQ Pakket populair;6,50 per persoon;pakket;;/img/pakket/populair.png;Alleen te bestellen voor vier personen: een lekkere mix met Kip spies, Runder Hamburger, Gemarineerd filetlapje, en Kip op stok.;1-1-2020;WAAR;4;ONWAAR;ONWAAR;"[""4x Kip spies"", ""4x Runder hamburger"", ""4x Filetlapje heerlijk gemarineerd"", ""4x Kip op stok""]"
 BBQ Rub;5,99;overig;;/img/producten/sauzen1.jpg;All Purpose.;1-1-2020;ONWAAR;3;ONWAAR;ONWAAR;
 Biefstukpuntjes;19,00 per kilo;rund;;/img/placeholder.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
@@ -24,7 +24,7 @@ Buikspek aan een stuk;11,90 per kilo;varken;;/img/producten/buikspek.jpg;Traditi
 Carpaccio Rollade;26,90 per kilo;rund;;/img/placeholder.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Carpaccio Rolletjes;2,29 per 100 gram;rund;;/img/producten/carpaccio-rolletjes.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Chicken Rub;5,99;overig;;/img/producten/sauzen1.jpg;Heerlijk op kip, varken.;1-1-2020;ONWAAR;3;ONWAAR;ONWAAR;
-Côte de Boeuf;28,50 per kilo;rund;;/img/producten/cotedeboeuf.jpg;De côte de boeuf is niet alleen een eyecatcher, maar door de goede verhouding tussen vet en vlees is het tevens vol van smaak en heerlijk mals. Bereid de côte de boeuf op de barbecue of in de oven.;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
+CÃ´te de Boeuf;28,50 per kilo;rund;;/img/producten/cotedeboeuf.jpg;De cÃ´te de boeuf is niet alleen een eyecatcher, maar door de goede verhouding tussen vet en vlees is het tevens vol van smaak en heerlijk mals. Bereid de cÃ´te de boeuf op de barbecue of in de oven.;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 De hele lijn 6 rubs en 4 marinades;49,99;overig;;/img/producten/sauzen3.jpg;De beste Rubs en Sauzen bij elkaar.;1-1-2020;ONWAAR;1;ONWAAR;ONWAAR;
 Diamanthaas;32,50 per kilo;rund;;/img/producten/diamanthaas.jpg;De diamanthaas is een zeer mals stukje vlees uit de voorpoot van een rund. De diamanthaas wordt ook wel jodenhaas genoemd omdat orthodoxe joden geen vlees eten uit de achterpoot.;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Een speenvarken tussen de 5 en 10 kg;14,50 per kilo;varken;;/img/producten/speenvarken.jpg;Een heel speenvarken voor aan het spit of in een grote BBQ! Proef het malse en zachte vlees van Hollands Speenvarken! U denkt vast dat de prijs verkeerd staat aangegeven. Maar hoe lichter het speenvarken hoe hoger de prijs per kg!;1-1-2020;WAAR;9;ONWAAR;ONWAAR;
@@ -48,11 +48,11 @@ Grillworstsalade;;salade;;/img/placeholder.jpg;;1-1-2020;ONWAAR;0;ONWAAR;ONWAAR;
 Haassate;14,00 per kilo;varken;;/img/placeholder.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Hamburger;1,50 per stuk;rund;;/img/producten/hamburger.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Hamlappen;12,50 per kilo;varken;;/img/placeholder.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
-Houtskool 10kg;24,00;overig;;/img/producten/kolen.jpg;Dammers Restaurant houtskool is verpakt in een sterke papieren zak.;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
+Houtskool 10kg;24;overig;;/img/producten/kolen.jpg;Dammers Restaurant houtskool is verpakt in een sterke papieren zak.;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Kip Cordon Bleu;1,79 per 100gr;kip;;/img/placeholder.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Kip Op Stok;6,99 per 4 stuks;kip;;/img/placeholder.jpg;;1-1-2020;ONWAAR;0;ONWAAR;ONWAAR;
 Kip rollade;11,99 per kilo;kip;;/img/producten/kip-rollade.jpg;Heerlijk stuk kip.;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
-Kipfilet;11,50 per kilo;kip;;/img/producten/kipfilet.jpg;Conventionele kip, gehouden in een stal omgeving met verrijkte dierenwelzijnsaspecten. Malse naturel kipfilet om eindeloos mee te variëren. Lekker met wat kruiden en marinade en makkelijk te snijden in blokjes, reepjes, plakjes etc.;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
+Kipfilet;11,50 per kilo;kip;;/img/producten/kipfilet.jpg;Conventionele kip, gehouden in een stal omgeving met verrijkte dierenwelzijnsaspecten. Malse naturel kipfilet om eindeloos mee te variÃ«ren. Lekker met wat kruiden en marinade en makkelijk te snijden in blokjes, reepjes, plakjes etc.;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Kippendijen filet gemarineerd;10,90 per kilo;kip;;/img/producten/kipdijenfilet.jpg;Deze kipdijfilets zijn van puur kippendijvlees waarvan het bot is verwijderd. Lekker gemarineerd.;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Kippendijen filet ongemarineerd;10,50 per kilo;kip;;/img/producten/kipdijenfilet.jpg;Deze kipdijfilets zijn van puur kippendijvlees waarvan het bot is verwijderd. Ze zijn ook erg lekker voor op de barbecue.;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Kip Poulet;11,99;kip;;/img/placeholder.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
@@ -84,7 +84,7 @@ Shortrib - Ongeveer 1.5 tot 2 kg;16,99 per kilo;rund;;/img/producten/shortrib.jp
 Sleetje cevapcici per sleetje;;gegaard;;/img/placeholder.jpg;;1-1-2020;ONWAAR;0;ONWAAR;ONWAAR;
 Smeer het er up!;5,99;overig;;/img/producten/sauzen2.jpg;Toppertje op brood, kip en rund.;1-1-2020;ONWAAR;2;ONWAAR;ONWAAR;
 Smokey Johnny;5,99;overig;;/img/producten/sauzen1.jpg;Heerlijk op kip, varken.;1-1-2020;ONWAAR;3;ONWAAR;ONWAAR;
-Smokey Johnny pakket;23,50;pakket;;/img/placeholder.jpg;;1-1-2020;ONWAAR;0;ONWAAR;ONWAAR;"[""3 kogelbiefstuk"", ""500 gram runder gehakt"", ""hamburgers"", ""4 kipschnitzels"", ""400 gram kipblokjes"", ""stukje grillworst""]"
+Smokey Johnny pakket;23,5;pakket;;/img/placeholder.jpg;;1-1-2020;ONWAAR;0;ONWAAR;ONWAAR;"[""3 kogelbiefstuk"", ""500 gram runder gehakt"", ""hamburgers"", ""4 kipschnitzels"", ""400 gram kipblokjes"", ""stukje grillworst""]"
 Spare ribs dik;10,99 per kilo;varken;;/img/producten/spare-ribs-dik.jpg;Laat de barbecuekooltjes maar gloeien voor deze supermalse, gemarineerde zoete spareribs. Al voorgegaard in traditionele heteluchtovens wat zorgt voor de heerlijke specifieke grillsmaak en de perfecte garing.;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Spare ribs dik of dun;89,99 per 10 kilo;varken;;/img/producten/spare-ribs-dik-of-dun.jpg;Laat de barbecuekooltjes maar gloeien voor deze supermalse, gemarineerde zoete spareribs. Al voorgegaard in traditionele heteluchtovens wat zorgt voor de heerlijke specifieke grillsmaak en de perfecte garing.;1-1-2020;WAAR;10;ONWAAR;ONWAAR;
 Spare ribs dun;10,50 per kilo;varken;;/img/producten/spare-ribs-dun.jpg;Heerlijk gemarineerde zoete sparerib die is voorgegaard in traditionele heteluchtovens. Dit zorgt voor de heerlijke specifieke grillsmaak en de perfecte garing. Ideaal voor op de barbecue.;1-1-2020;WAAR;-2;ONWAAR;ONWAAR;
@@ -93,13 +93,13 @@ Speklapjes Gekruid;12,50 per kilo;varken;;/img/placeholder.jpg;;1-1-2020;WAAR;0;
 Speklapjes Ongekruid;11,90 per kilo;varken;;/img/placeholder.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Spicey BBQ;5,99;overig;;/img/producten/sauzen1.jpg;All Purpose.;1-1-2020;ONWAAR;3;ONWAAR;ONWAAR;
 Sucadelappen;14,99 per kilo;rund;;/img/producten/sucadelappen.jpg;Sucadelappen met een boterzachte smaak, van runderen uit Ierland. Zachtjes laten sudderen tot het bijna uit elkaar valt. Om eindeloos mee te varieren, bijvoorbeeld in een indonesisch stoofgerecht.;1-1-2020;WAAR;-1;ONWAAR;ONWAAR;
-Tapasschotel;21,99 per schaal;pakket;;/img/pakket/tapas.jpg;Een combinatie van luxeuze hapjes in één pakket.;1-1-2020;WAAR;2;ONWAAR;ONWAAR;
+Tapasschotel;21,99 per schaal;pakket;;/img/pakket/tapas.jpg;Een combinatie van luxeuze hapjes in Ã©Ã©n pakket.;1-1-2020;WAAR;2;ONWAAR;ONWAAR;
 Tomahawk;26,99 per kilo;rund;;/img/producten/tomahawk.jpg;De Tomahawk steak is met zijn lange uitstekende bot niet alleen een eyecatcher, maar door de goede verhouding tussen vet en vlees vol van smaak en heerlijk mals.;1-1-2020;ONWAAR;0;ONWAAR;ONWAAR;
 Tortillas;3 per stuk;overig;;/img/producten/tortillas.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Varken Schnitzels Gepaneerd;14,99 per kilo;varken;;/img/placeholder.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Varken Schnitzels Ongepaneerd;15,99 per kilo;varken;;/img/placeholder.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Varkens kophaas;14,99 per kilo;varken;;/img/producten/varkenshaas.jpg;Varkenshaas is mager vlees met een zachte smaak en het toppunt van malsheid: een echte lekkernij. Scharrelvlees, dus extra smakelijk. Heerlijk met champignonroomsaus.;1-1-2020;WAAR;-3;ONWAAR;ONWAAR;
-Varkenshaas saté;1,89 per 100 gram;varken;;/img/producten/varkenshaas-sate.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
+Varkenshaas satÃ©;1,89 per 100 gram;varken;;/img/producten/varkenshaas-sate.jpg;;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Varkenshaas zonder ketting;18,90 per kilo;varken;;/img/producten/varkenshaas.jpg;Varkenshaas is mager vlees met een zachte smaak en het toppunt van malsheid. Heerlijk met een klassieke champignonroomsaus. Maak ook eens een superluxe sate met deze varkenshaas.;1-1-2020;WAAR;0;ONWAAR;ONWAAR;
 Varkensshoarma;7,95 per kilo;varken;;/img/producten/shoarma.jpg;;1-1-2020;ONWAAR;0;ONWAAR;ONWAAR;
 Voorgegaarde spare ribs;13,99 per kilo;varken;;/img/producten/voorgegaarde-spare-ribs.png;Voordat wij onze spare ribs op de barbeque voorgaren, worden de spare ribs gemarineerd in een tumbler. Bij het tumblen wordt het vlees rondgedraaid en gekanteld in een grote ronde trommel. Doordat het product gaat rollen worden de spiercellen in het vlees geactiveerd, waardoor de eiwitten beter hun best doen. Zo zorgen zij voor een betere opname van de zelfgemaakte marinade. Dit maakt onze spare ribs de lekkerste spare ribs uit Noord-Holland!;1-1-2020;WAAR;-3;ONWAAR;WAAR;
