@@ -99,7 +99,7 @@ jobs:
 
       - name: Push generated site to GitHub Pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           cd public
           echo "Changed directory to $(pwd)"
@@ -107,11 +107,11 @@ jobs:
           git remote -v
 
           # Optionally reset origin to the new repository URL
-          git remote set-url origin https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${{ env.user }}/${{ env.repo }}.git
+          git remote set-url origin https://${GH_PAT}:x-oauth-basic@github.com/${{ env.user }}/${{ env.repo }}.git
           git remote -v
 
           branch=${GITHUB_REF#refs/heads/}
           git checkout "$branch" 2>/dev/null || git checkout -b "$branch"
           git add --all
           git -c user.name="${{ env.user }}" -c user.email="${{ env.email }}" commit -m "commit $(date +"%Y_%m_%d_%I_%M_%p")" || echo "No changes to commit"
-          git push -f https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${{ env.user }}/${{ env.repo }}.git "$branch"
+          git push -f https://${GH_PAT}:x-oauth-basic@github.com/${{ env.user }}/${{ env.repo }}.git "$branch"
