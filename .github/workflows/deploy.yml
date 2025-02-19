@@ -46,9 +46,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       python_version: "3.8"
-      user: menziess
-      email: stefan_schenk@hotmail.com
-      repo: barbeque
+      user: stefadinho
+      email: stefano_2000@live.nl
+      repo: sjbbq
       products_path: content/products
     steps:
       - name: Checkout code (with submodules)
