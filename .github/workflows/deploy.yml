@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       python_version: "3.8"
-      user: menziess
-      email: stefan_schenk@hotmail.com
-      repo: barbeque
+      user: stefadinho
+      email: stefano_2000@live.nl
+      repo: sjbbq
       products_path: content/products
     steps:
       - name: Checkout code
@@ -103,10 +103,9 @@ jobs:
         run: |
           cd public
           echo "Changed directory to $(pwd)"
-          # Use the branch name from the triggering ref
+          # Extract the branch name from the GitHub ref, similar to $(Build.SourceBranchName)
           branch=${GITHUB_REF#refs/heads/}
-          git checkout $branch 2>/dev/null || git checkout -b $branch
+          git checkout "$branch" 2>/dev/null || git checkout -b "$branch"
           git add --all
-          # Commit only if there are changes; ignore error if there is nothing to commit.
           git -c user.name="${{ env.user }}" -c user.email="${{ env.email }}" commit -m "commit $(date +"%Y_%m_%d_%I_%M_%p")" || echo "No changes to commit"
-          git push -f https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${{ env.user }}/${{ env.repo }}.git $branch
+          git push -f https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${{ env.user }}/${{ env.repo }}.git "$branch"
