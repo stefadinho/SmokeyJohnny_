@@ -9,7 +9,7 @@ Filetrollade,"12,90 per kilo",varken,,/img/placeholder.jpg,,2020-01-01,TRUE,0,FA
 Varken Schnitzels Gepaneerd,"14,99 per kilo",varken,,/img/placeholder.jpg,,2020-01-01,TRUE,0,FALSE,FALSE,
 Speklapjes Ongekruid,"11,90 per kilo",varken,,/img/placeholder.jpg,,2020-01-01,TRUE,0,FALSE,FALSE,
 Een speenvarken van 10 kg of zwaarder,"14,50 per kilo",varken,,/img/producten/speenvarken.jpg,Een heel speenvarken voor aan het spit of in een grote BBQ! Proef het malse en zachte vlees van Hollands Speenvarken! Hoe lichter het speenvarken hoe hoger de prijs per kg!,2020-01-01,TRUE,-4,FALSE,FALSE,
-Fricandeau,"9,50 per kilo",varken,,/img/placeholder.jpg,,2020-01-01,TRUE,0,FALSE,FALSE,
+Fricandeau,"12.90 per kilo",varken,,/img/placeholder.jpg,,2020-01-01,TRUE,0,FALSE,FALSE,
 4 Filetlapjes Gemarineerd,"6,99 per 4 stuks",varken,,/img/placeholder.jpg,,2020-01-01,TRUE,0,FALSE,FALSE,
 Spare ribs dik of dun,"89,99 per 10 kilo",varken,,/img/producten/spare-ribs-dik-of-dun.jpg,"Laat de barbecuekooltjes maar gloeien voor deze supermalse, gemarineerde zoete spareribs. Al voorgegaard in traditionele heteluchtovens wat zorgt voor de heerlijke specifieke grillsmaak en de perfecte garing.",2020-01-01,TRUE,10,FALSE,FALSE,
 4 Filetlapjes Ongemarineerd,"6,00 per 4 stuks",varken,,/img/placeholder.jpg,,2020-01-01,TRUE,0,FALSE,FALSE,
@@ -60,9 +60,9 @@ Entrecote Rollade,"32,90 per kilo",rund,,/img/placeholder.jpg,,2020-01-01,TRUE,0
 4 Black Angus Burgers,"6,99 per 4 stuks",black-angus,,/img/placeholder.jpg,,2020-01-01,TRUE,0,FALSE,FALSE,
 Tapasschotel,"21,99 per schaal",pakket,,/img/pakket/tapas.jpg,Een combinatie van luxeuze hapjes in één pakket.,2020-01-01,TRUE,2,FALSE,FALSE,
 Borrel pakket,"21,99 per schaal",pakket,,/img/pakket/borrel.jpg,Lekker veel hapjes voor bij een borrel.,2020-01-01,TRUE,1,FALSE,FALSE,
-BBQ Pakket populair,"6,50 per persoon",pakket,,/img/pakket/populair.png,"Alleen te bestellen voor vier personen: een lekkere mix met Kip spies, Runder Hamburger, Gemarineerd filetlapje, en Kip op stok.",2020-01-01,TRUE,4,FALSE,FALSE,"[""4x Kip spies"", ""4x Runder hamburger"", ""4x Filetlapje heerlijk gemarineerd"", ""4x Kip op stok""]"
+BBQ Pakket populair,"7.25 per persoon",pakket,,/img/pakket/populair.png,"Alleen te bestellen voor vier personen: een lekkere mix met Kip spies, Runder Hamburger, Gemarineerd filetlapje, en Kip op stok.",2020-01-01,TRUE,4,FALSE,FALSE,"[""4x Kip spies"", ""4x Runder hamburger"", ""4x Filetlapje heerlijk gemarineerd"", ""4x Kip op stok""]"
 Gourmet schotel,"8,99 per persoon",pakket,,/img/pakket/gourmetschotel.jpg,Lekker een gezellig avondje goumetten met vrienden of familie.,2020-01-01,TRUE,0,FALSE,FALSE,"[""Kogelbiefstuk"", ""Kipfilet"", ""Gemarineerde Kipfilet"", ""Varkenshaas"", ""Hamburger"", ""Kipshoarma"", ""Gemarineerde kogelbiefstuk""]"
-BBQ Pakket deluxe,"8,50 per persoon",pakket,,/img/pakket/deluxe.png,"Alleen te bestellen voor vier personen: de beste Ossenhaas spies, Varkenshaas spies, Kip saté spies, en Kip op stok!",2020-01-01,TRUE,3,FALSE,FALSE,"[""4x Ossenhaas spies"", ""4x Varkenshaas spies"", ""4x Kip saté spies"", ""4x Kip op stok""]"
+BBQ Pakket deluxe,"9.25 per persoon",pakket,,/img/pakket/deluxe.png,"Alleen te bestellen voor vier personen: de beste Ossenhaas spies, Varkenshaas spies, Kip saté spies, en Kip op stok!",2020-01-01,TRUE,3,FALSE,FALSE,"[""4x Ossenhaas spies"", ""4x Varkenshaas spies"", ""4x Kip saté spies"", ""4x Kip op stok""]"
 Smokey Johnny pakket,"23,50",pakket,,/img/placeholder.jpg,,2020-01-01,FALSE,0,FALSE,FALSE,"[""3 kogelbiefstuk"", ""500 gram runder gehakt"", ""hamburgers"", ""4 kipschnitzels"", ""400 gram kipblokjes"", ""stukje grillworst""]"
 Smokey Johnny Smulpakket,"32.50",pakket,,/img/placeholder.jpg,,2020-01-01,TRUE,0,FALSE,FALSE,"[""3 kogelbiefstukjes"", ""500 gram kipfilet"", ""500 gram runder gehakt"", ""400 gram kipblokjes"", ""4 hamburgers"", ""4 kipschnitzels"", ""Stukje grillworst""]"
 Basic Rub,"5,99",overig,,/img/producten/sauzen1.jpg,All Purpose.,2020-01-01,FALSE,3,FALSE,FALSE,
