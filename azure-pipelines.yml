@@ -1,3 +1,4 @@
+
 trigger:
   branches:
     include:
@@ -8,9 +9,9 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  user: stefadinho
-  email: stefano_2000@live.nl
-  repo: smokeysite
+  user: menziess
+  email: stefan_schenk@hotmail.com
+  repo: barbeque
   products_path: content/products
   python.version: "3.8"
 
