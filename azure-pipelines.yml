@@ -62,7 +62,7 @@ stages:
           - download: current
             artifact: vlees_converter.whl
 
-          - script: pip install $(Pipeline.Workspace)/vlees_converter.whl/*.whl
+          - script: pip install $(Pipeline.Workspace)/vlees_converter-*.whl
             displayName: Install vlees-converter
 
           - script: |
