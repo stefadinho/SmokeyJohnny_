@@ -70,8 +70,8 @@ def to_templates():
         d = dict(zip(cols, row))
 
         # skip products that have no price
-        if not d['price']:
-            continue
+        # if not d['price']:
+            # continue
 
         # convert to product
         p = Product(**d)
