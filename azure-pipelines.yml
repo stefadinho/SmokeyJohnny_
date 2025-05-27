@@ -8,9 +8,9 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  user: menziess
-  email: stefan_schenk@hotmail.com
-  repo: barbeque
+  user: stefadinho
+  email: stefano_2000@live.nl
+  repo: smokeysite
   products_path: content/products
   python.version: "3.8"
 
