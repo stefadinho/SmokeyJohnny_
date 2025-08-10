@@ -28,9 +28,13 @@ comments: false
 
 {{< products category="gegaard" compact="true" >}}
 
-### [Salades](/page/salade)
+### [Kruiden](/page/kruiden)
 
-{{< products category="salade" compact="true" >}}
+{{< products category="kruiden" compact="true" >}}
+
+<!--### [Salades](/page/salade)
+
+{{< products category="salade" compact="true" >}}-->
 
 ### [Sauzen](/page/saus)
 
