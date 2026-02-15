@@ -1,7 +1,7 @@
 title,price,type,weight,image,subtitle,date,live,ordinal,truncated,action,items
 Spare ribs dik,"11,20 per kilo",varken,,/img/producten/spare-ribs-dik.jpg,"Laat de barbecuekooltjes maar gloeien voor deze supermalse, gemarineerde zoete spareribs. Al voorgegaard in traditionele heteluchtovens wat zorgt voor de heerlijke specifieke grillsmaak en de perfecte garing.",01/01/2020,TRUE,0,FALSE,FALSE,
 Spare ribs extra dik,"11,75 per kilo",varken,,/img/producten/spare-ribs-dik.jpg,"Laat de barbecuekooltjes maar gloeien voor deze supermalse, gemarineerde zoete spareribs. Al voorgegaard in traditionele heteluchtovens wat zorgt voor de heerlijke specifieke grillsmaak en de perfecte garing.",01/01/2020,TRUE,0,FALSE,FALSE,
-Voorgegaarde spare ribs,"14,50 per kilo",varken,,/img/producten/voorgegaarde-spare-ribs.png,"Voordat wij onze spare ribs op de barbeque voorgaren, worden de spare ribs gemarineerd in een tumbler. Bij het tumblen wordt het vlees rondgedraaid en gekanteld in een grote ronde trommel. Doordat het product gaat rollen worden de spiercellen in het vlees geactiveerd, waardoor de eiwitten beter hun best doen. Zo zorgen zij voor een betere opname van de zelfgemaakte marinade. Dit maakt onze spare ribs de lekkerste spare ribs uit Noord-Holland!",01/01/2020,TRUE,-3,FALSE,TRUE,
+Voorgegaarde spare ribs,"14,75 per kilo",varken,,/img/producten/voorgegaarde-spare-ribs.png,"Voordat wij onze spare ribs op de barbeque voorgaren, worden de spare ribs gemarineerd in een tumbler. Bij het tumblen wordt het vlees rondgedraaid en gekanteld in een grote ronde trommel. Doordat het product gaat rollen worden de spiercellen in het vlees geactiveerd, waardoor de eiwitten beter hun best doen. Zo zorgen zij voor een betere opname van de zelfgemaakte marinade. Dit maakt onze spare ribs de lekkerste spare ribs uit Noord-Holland!",01/01/2020,TRUE,-3,FALSE,TRUE,
 Varkensshoarma,"8,25 per kilo",varken,,/img/producten/shoarma.jpg,,01/01/2020,FALSE,0,FALSE,FALSE,
 Varkenshaas zonder ketting,"19,25 per kilo",varken,,/img/producten/varkenshaas.jpg,Varkenshaas is mager vlees met een zachte smaak en het toppunt van malsheid. Heerlijk met een klassieke champignonroomsaus. Maak ook eens een superluxe sate met deze varkenshaas.,01/01/2020,TRUE,0,FALSE,FALSE,
 Hamlappen,"12,75 per kilo",varken,,/img/placeholder.jpg,,01/01/2020,TRUE,0,FALSE,FALSE,
@@ -119,7 +119,7 @@ Kip Poulet,"12,25 per kilo",kip,,/img/placeholder.jpg,,01/01/2020,TRUE,0,FALSE,F
 Grillworst met kaas,"16,99 per kilo",varken,,/img/placeholder.jpg,,01/01/2020,TRUE,0,FALSE,FALSE,
 Kant en klare Gehaktbal,"1,75 per stuk",gegaard,,/img/placeholder.jpg,,01/01/2020,TRUE,0,FALSE,FALSE,
 4 Runder Gehaktballen,"8,25 per 4 stuks",rund,,/img/placeholder.jpg,,01/01/2020,TRUE,0,FALSE,FALSE,
-4 Gemarineerde Kipfilet,"7,00 per 4 stuks",kip,,/img/placeholder.jpg,,01/01/2020,TRUE,0,FALSE,FALSE,
+Gemarineerde Kipfilet,"13,75 per kilo",kip,,/img/placeholder.jpg,,01/01/2020,TRUE,0,FALSE,FALSE,
 Deuze moet je hewwe,"9,75 per pot",kruiden,,/img/producten/deuze-moet-je-hewwe.jpg,,01/01/2020,TRUE,0,FALSE,FALSE,
 Dut is wel wat joôje,"9,75 per pot",kruiden,,/img/producten/dut-is-wel-wat-jooje.jpg,,01/01/2020,TRUE,0,FALSE,FALSE,
 Dut smaakt skoftig,"9,75 per pot",kruiden,,/img/producten/dut-smaakt-skoftig.jpg,,01/01/2020,TRUE,0,FALSE,FALSE,
@@ -127,6 +127,7 @@ Effies wat aars,"9,75 per pot",kruiden,,/img/producten/effies-wat-aars.jpg,,01/0
 Hiero keye niet of bloive,"9,75 per pot",kruiden,,/img/producten/hiero-keye-niet-of-bloive.jpg,,01/01/2020,TRUE,0,FALSE,FALSE,
 Hilsverskrikkeluk dut,"9,75 per pot",kruiden,,/img/producten/hilsverskrikkeluk-dut.jpg,,01/01/2020,TRUE,0,FALSE,FALSE,
 Zuks of zuks,"10,25 per pot",kruiden,,/img/producten/zuks-of-zuks.jpg,,01/01/2020,TRUE,0,FALSE,FALSE,
+
 
 
 
